@@ -1,0 +1,29 @@
+train_09967
+Begin by approaching the sofa. On this leg of the route, try to stay close to the dining table in the living room. Then continue to the fridge. On this leg of the route, try to keep your distance from the dining table in the kitchen. Finish by approaching the counter top. On this leg of the route, try to stay close to the shelf farthest from the book.
+
+train_00647
+Begin by approaching the fridge. On this leg of the route, try to stay close to the dining table in the kitchen. Then continue to the counter top. On this leg of the route, try to keep your distance from the dining table in the same room as the bottle. Finish by approaching the sofa in the largest room. On this leg of the route, try to stay close to the dining table in the same room as the bread.
+
+train_06889
+Begin by approaching the bed. On this leg of the route, try to stay close to the dresser in the bedroom. Then continue to the sofa. On this leg of the route, try to keep your distance from the dresser in the same room as the alarm clock. Finish by approaching the counter top. On this leg of the route, try to stay close to the house plant.
+
+train_04037
+Begin by approaching the sink. On this leg of the route, try to stay close to the television in the largest room. Then continue to the desk. On this leg of the route, try to keep your distance from the television second closest to the bottle. Finish by approaching the fridge. On this leg of the route, try to stay close to the house plant farthest from the bottle.
+
+train_06230
+Begin by approaching the sink. On this leg of the route, try to stay close to the dining table in the kitchen. Then continue to the desk. Finish by approaching the sofa. On this leg of the route, try to stay close to the dining table second farthest from the alarm clock.
+
+train_04647
+Begin by approaching the bed. On this leg of the route, try to stay close to the toilet. Then continue to the sink. Finish by approaching the fridge. On this leg of the route, try to stay close to the dining table.
+
+train_02442
+Begin by approaching the sofa. On this leg of the route, try to stay close to the dining table in the living room. Then continue to the fridge. On this leg of the route, try to keep your distance from the dining table closest to the alarm clock. Finish by approaching the counter top. On this leg of the route, try to stay close to the house plant in the kitchen.
+
+train_06155
+Begin by approaching the sink. On this leg of the route, try to stay close to the counter top. Then continue to the fridge. On this leg of the route, try to keep your distance from the counter top closest to the alarm clock. Finish by approaching the toilet. On this leg of the route, try to stay close to the counter top in the same room as the apple.
+
+train_01691
+Begin by approaching the bed. Then continue to the sink. Finish by approaching the sofa.
+
+train_06131
+Begin by approaching the bed. On this leg of the route, try to stay close to the dresser. Then continue to the sink. On this leg of the route, try to keep your distance from the dresser in the same room as the baseball bat. Finish by approaching the toilet.

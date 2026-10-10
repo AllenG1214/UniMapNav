@@ -1,0 +1,12 @@
+resources/
+Map2Route/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.log
+*_metric_cache/
+artifacts/
+.env
+.env.*

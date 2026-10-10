@@ -1,0 +1,1 @@
+Generated navigation annotations. See hierarchical_navigation.md for depth, difficulty, and validation semantics. Manifest links unchanged source maps. Trajectories are algorithmic references, not human demonstrations.

@@ -1,0 +1,246 @@
+{
+  "maps": 10,
+  "total_items": 1506,
+  "total_instructions": 306,
+  "validation": "passed",
+  "scenes": [
+    {
+      "map": "train_09967",
+      "source_index": 9967,
+      "rooms": 2,
+      "items": 89,
+      "item_status_counts": {
+        "verified": 54,
+        "excluded_structural": 26,
+        "unresolved": 9
+      },
+      "instructions": 18,
+      "difficulty_counts": {
+        "medium": 11,
+        "hard": 7
+      },
+      "description_rule_counts_by_depth": {
+        "1": 30,
+        "2": 1267,
+        "3": 1274,
+        "4": 1260
+      },
+      "excluded_navigation_targets": 35,
+      "covered_navigation_targets": 54
+    },
+    {
+      "map": "train_00647",
+      "source_index": 647,
+      "rooms": 10,
+      "items": 282,
+      "item_status_counts": {
+        "verified": 177,
+        "unresolved": 19,
+        "excluded_structural": 86
+      },
+      "instructions": 59,
+      "difficulty_counts": {
+        "medium": 31,
+        "hard": 28
+      },
+      "description_rule_counts_by_depth": {
+        "1": 23,
+        "2": 3248,
+        "3": 4193,
+        "4": 4204
+      },
+      "excluded_navigation_targets": 106,
+      "covered_navigation_targets": 176
+    },
+    {
+      "map": "train_06889",
+      "source_index": 6889,
+      "rooms": 3,
+      "items": 105,
+      "item_status_counts": {
+        "verified": 68,
+        "excluded_structural": 29,
+        "unresolved": 8
+      },
+      "instructions": 22,
+      "difficulty_counts": {
+        "medium": 12,
+        "hard": 10
+      },
+      "description_rule_counts_by_depth": {
+        "1": 26,
+        "2": 1571,
+        "3": 1632,
+        "4": 1616
+      },
+      "excluded_navigation_targets": 40,
+      "covered_navigation_targets": 65
+    },
+    {
+      "map": "train_04037",
+      "source_index": 4037,
+      "rooms": 7,
+      "items": 202,
+      "item_status_counts": {
+        "verified": 122,
+        "unresolved": 25,
+        "excluded_structural": 55
+      },
+      "instructions": 40,
+      "difficulty_counts": {
+        "medium": 23,
+        "hard": 17
+      },
+      "description_rule_counts_by_depth": {
+        "1": 19,
+        "2": 2242,
+        "3": 2861,
+        "4": 2866
+      },
+      "excluded_navigation_targets": 82,
+      "covered_navigation_targets": 120
+    },
+    {
+      "map": "train_06230",
+      "source_index": 6230,
+      "rooms": 5,
+      "items": 195,
+      "item_status_counts": {
+        "verified": 128,
+        "unresolved": 18,
+        "excluded_structural": 49
+      },
+      "instructions": 43,
+      "difficulty_counts": {
+        "medium": 28,
+        "hard": 15
+      },
+      "description_rule_counts_by_depth": {
+        "1": 39,
+        "2": 2842,
+        "3": 3072,
+        "4": 3072
+      },
+      "excluded_navigation_targets": 67,
+      "covered_navigation_targets": 128
+    },
+    {
+      "map": "train_04647",
+      "source_index": 4647,
+      "rooms": 4,
+      "items": 87,
+      "item_status_counts": {
+        "verified": 53,
+        "excluded_structural": 29,
+        "unresolved": 5
+      },
+      "instructions": 18,
+      "difficulty_counts": {
+        "medium": 18
+      },
+      "description_rule_counts_by_depth": {
+        "1": 37,
+        "2": 1234,
+        "3": 1272,
+        "4": 1254
+      },
+      "excluded_navigation_targets": 34,
+      "covered_navigation_targets": 53
+    },
+    {
+      "map": "train_02442",
+      "source_index": 2442,
+      "rooms": 6,
+      "items": 182,
+      "item_status_counts": {
+        "verified": 113,
+        "excluded_structural": 52,
+        "unresolved": 17
+      },
+      "instructions": 38,
+      "difficulty_counts": {
+        "medium": 23,
+        "hard": 15
+      },
+      "description_rule_counts_by_depth": {
+        "1": 19,
+        "2": 2098,
+        "3": 2667,
+        "4": 2678
+      },
+      "excluded_navigation_targets": 69,
+      "covered_navigation_targets": 113
+    },
+    {
+      "map": "train_06155",
+      "source_index": 6155,
+      "rooms": 7,
+      "items": 171,
+      "item_status_counts": {
+        "verified": 96,
+        "excluded_structural": 58,
+        "unresolved": 17
+      },
+      "instructions": 31,
+      "difficulty_counts": {
+        "medium": 25,
+        "hard": 6
+      },
+      "description_rule_counts_by_depth": {
+        "1": 29,
+        "2": 2045,
+        "3": 2253,
+        "4": 2254
+      },
+      "excluded_navigation_targets": 79,
+      "covered_navigation_targets": 92
+    },
+    {
+      "map": "train_01691",
+      "source_index": 1691,
+      "rooms": 4,
+      "items": 145,
+      "item_status_counts": {
+        "verified": 93,
+        "excluded_structural": 41,
+        "unresolved": 11
+      },
+      "instructions": 31,
+      "difficulty_counts": {
+        "medium": 20,
+        "hard": 11
+      },
+      "description_rule_counts_by_depth": {
+        "1": 42,
+        "2": 2159,
+        "3": 2220,
+        "4": 2220
+      },
+      "excluded_navigation_targets": 52,
+      "covered_navigation_targets": 93
+    },
+    {
+      "map": "train_06131",
+      "source_index": 6131,
+      "rooms": 2,
+      "items": 48,
+      "item_status_counts": {
+        "verified": 20,
+        "excluded_structural": 22,
+        "unresolved": 6
+      },
+      "instructions": 6,
+      "difficulty_counts": {
+        "medium": 6
+      },
+      "description_rule_counts_by_depth": {
+        "1": 17,
+        "2": 480,
+        "3": 480,
+        "4": 456
+      },
+      "excluded_navigation_targets": 31,
+      "covered_navigation_targets": 17
+    }
+  ]
+}

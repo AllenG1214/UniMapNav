@@ -1,0 +1,121 @@
+{
+  "dataset": "procthor-10k",
+  "split": "train",
+  "population": 10000,
+  "seed": 2435713885,
+  "selected_indices_zero_based": [
+    9967,
+    647,
+    6889,
+    4037,
+    6230,
+    4647,
+    2442,
+    6155,
+    1691,
+    6131
+  ],
+  "selection": "random sample without replacement",
+  "scenes": [
+    {
+      "index": 9967,
+      "folder": "train_09967",
+      "exit_code": 0,
+      "log_file": "train_09967.log",
+      "status": "verified",
+      "objects": 89,
+      "rooms": 2,
+      "map_file": "maps/train_09967/train_09967.json"
+    },
+    {
+      "index": 647,
+      "folder": "train_00647",
+      "exit_code": 0,
+      "log_file": "train_00647.log",
+      "status": "verified",
+      "objects": 282,
+      "rooms": 10,
+      "map_file": "maps/train_00647/train_00647.json"
+    },
+    {
+      "index": 6889,
+      "folder": "train_06889",
+      "exit_code": 0,
+      "log_file": "train_06889.log",
+      "status": "verified",
+      "objects": 105,
+      "rooms": 3,
+      "map_file": "maps/train_06889/train_06889.json"
+    },
+    {
+      "index": 4037,
+      "folder": "train_04037",
+      "exit_code": 0,
+      "log_file": "train_04037.log",
+      "status": "verified",
+      "objects": 202,
+      "rooms": 7,
+      "map_file": "maps/train_04037/train_04037.json"
+    },
+    {
+      "index": 6230,
+      "folder": "train_06230",
+      "exit_code": 0,
+      "log_file": "train_06230.log",
+      "status": "verified",
+      "objects": 195,
+      "rooms": 5,
+      "map_file": "maps/train_06230/train_06230.json"
+    },
+    {
+      "index": 4647,
+      "folder": "train_04647",
+      "exit_code": 0,
+      "log_file": "train_04647.log",
+      "status": "verified",
+      "objects": 87,
+      "rooms": 4,
+      "map_file": "maps/train_04647/train_04647.json"
+    },
+    {
+      "index": 2442,
+      "folder": "train_02442",
+      "exit_code": 0,
+      "log_file": "train_02442.log",
+      "status": "verified",
+      "objects": 182,
+      "rooms": 6,
+      "map_file": "maps/train_02442/train_02442.json"
+    },
+    {
+      "index": 6155,
+      "folder": "train_06155",
+      "exit_code": 0,
+      "log_file": "train_06155.log",
+      "status": "verified",
+      "objects": 171,
+      "rooms": 7,
+      "map_file": "maps/train_06155/train_06155.json"
+    },
+    {
+      "index": 1691,
+      "folder": "train_01691",
+      "exit_code": 0,
+      "log_file": "train_01691.log",
+      "status": "verified",
+      "objects": 145,
+      "rooms": 4,
+      "map_file": "maps/train_01691/train_01691.json"
+    },
+    {
+      "index": 6131,
+      "folder": "train_06131",
+      "exit_code": 0,
+      "log_file": "train_06131.log",
+      "status": "verified",
+      "objects": 48,
+      "rooms": 2,
+      "map_file": "maps/train_06131/train_06131.json"
+    }
+  ]
+}

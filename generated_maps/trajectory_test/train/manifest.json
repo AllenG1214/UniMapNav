@@ -1,0 +1,72 @@
+[
+  {
+    "scene": "train_09967",
+    "count": 18,
+    "source_map": "C:\\Users\\guoch\\Documents\\ChatGPT\\Universal Navigation\\generated_maps\\trajectory_test\\maps\\train_09967\\train_09967.json",
+    "source_sha256": "bede10b31db51892972a3bf50f1567c67d7d43d9bd65dea96a557143c79d3b78",
+    "validation": "passed"
+  },
+  {
+    "scene": "train_00647",
+    "count": 59,
+    "source_map": "C:\\Users\\guoch\\Documents\\ChatGPT\\Universal Navigation\\generated_maps\\trajectory_test\\maps\\train_00647\\train_00647.json",
+    "source_sha256": "331f52bb026239208f83c105efc6bae2be3617fefe6b40a697a3aa872ab1176c",
+    "validation": "passed"
+  },
+  {
+    "scene": "train_06889",
+    "count": 22,
+    "source_map": "C:\\Users\\guoch\\Documents\\ChatGPT\\Universal Navigation\\generated_maps\\trajectory_test\\maps\\train_06889\\train_06889.json",
+    "source_sha256": "d857ed59cc98196e907dfa136eea8c2c5c1a8717641a464219dd6249163d0a93",
+    "validation": "passed"
+  },
+  {
+    "scene": "train_04037",
+    "count": 40,
+    "source_map": "C:\\Users\\guoch\\Documents\\ChatGPT\\Universal Navigation\\generated_maps\\trajectory_test\\maps\\train_04037\\train_04037.json",
+    "source_sha256": "d5ef9404c90970eb70b02e32599b2cda40f48bfb52dd2ee13a8f8b37d236a9f7",
+    "validation": "passed"
+  },
+  {
+    "scene": "train_06230",
+    "count": 43,
+    "source_map": "C:\\Users\\guoch\\Documents\\ChatGPT\\Universal Navigation\\generated_maps\\trajectory_test\\maps\\train_06230\\train_06230.json",
+    "source_sha256": "a4b39eaaa2298efd6cb63550fd3e3db107e2463809de612fd0cec1adad15d58a",
+    "validation": "passed"
+  },
+  {
+    "scene": "train_04647",
+    "count": 18,
+    "source_map": "C:\\Users\\guoch\\Documents\\ChatGPT\\Universal Navigation\\generated_maps\\trajectory_test\\maps\\train_04647\\train_04647.json",
+    "source_sha256": "acf0d0483c4970832365a65c4842ac7b7d453e4a3989abafc167426783bbf249",
+    "validation": "passed"
+  },
+  {
+    "scene": "train_02442",
+    "count": 38,
+    "source_map": "C:\\Users\\guoch\\Documents\\ChatGPT\\Universal Navigation\\generated_maps\\trajectory_test\\maps\\train_02442\\train_02442.json",
+    "source_sha256": "0f1aca8b71eacb228d7d4446d0770b2f392b23373be4935ed63f7384d7cc8b7f",
+    "validation": "passed"
+  },
+  {
+    "scene": "train_06155",
+    "count": 31,
+    "source_map": "C:\\Users\\guoch\\Documents\\ChatGPT\\Universal Navigation\\generated_maps\\trajectory_test\\maps\\train_06155\\train_06155.json",
+    "source_sha256": "d8b174f402aff1bb87b735aaba9b45fd8eb89035964774b543b5c57585e24576",
+    "validation": "passed"
+  },
+  {
+    "scene": "train_01691",
+    "count": 31,
+    "source_map": "C:\\Users\\guoch\\Documents\\ChatGPT\\Universal Navigation\\generated_maps\\trajectory_test\\maps\\train_01691\\train_01691.json",
+    "source_sha256": "55875dcaad2df367d8cd38f27d54dce2df1b38b52f93a87b638eb518a8c222de",
+    "validation": "passed"
+  },
+  {
+    "scene": "train_06131",
+    "count": 6,
+    "source_map": "C:\\Users\\guoch\\Documents\\ChatGPT\\Universal Navigation\\generated_maps\\trajectory_test\\maps\\train_06131\\train_06131.json",
+    "source_sha256": "ebd80afe338f4006da709e66ecd6ac67d513633414df9ccf5387fa6095b15df3",
+    "validation": "passed"
+  }
+]

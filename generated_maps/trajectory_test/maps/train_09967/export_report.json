@@ -1,0 +1,11 @@
+{
+  "status": "simulator_export_completed",
+  "source_split": "train",
+  "source_index": 9967,
+  "platform": "linux",
+  "map_file": "/mnt/c/Users/guoch/Documents/ChatGPT/Universal Navigation/generated_maps/trajectory_test/maps/train_09967/train_09967.json",
+  "preview_file": "/mnt/c/Users/guoch/Documents/ChatGPT/Universal Navigation/generated_maps/trajectory_test/maps/train_09967/train_09967_view.png",
+  "objects": 89,
+  "rooms": 2,
+  "footprints": 89
+}

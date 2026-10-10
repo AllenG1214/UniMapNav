@@ -1,0 +1,6364 @@
+{
+  "source_map": "C:\\Users\\guoch\\Documents\\ChatGPT\\Universal Navigation\\generated_maps\\trajectory_test\\maps\\train_02442\\train_02442.json",
+  "source_sha256": "0f1aca8b71eacb228d7d4446d0770b2f392b23373be4935ed63f7384d7cc8b7f",
+  "objects": [
+    {
+      "id": 1,
+      "category": "alarm_clock",
+      "name": "AlarmClock|surface|6|10",
+      "attributes": [
+        "procthor_object_id=AlarmClock|surface|6|10",
+        "procthor_object_type=AlarmClock",
+        "footprint_source=bbox",
+        "num_grid_cells=8",
+        "footprint_area=0.020000000000000004"
+      ],
+      "center_grid": [
+        233,
+        207
+      ],
+      "metadata_grid_cell": [
+        233,
+        207
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 8,
+      "footprint_source": "bbox",
+      "description": "the alarm clock",
+      "description_constraints": {
+        "category": "alarm_clock"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        1
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 2,
+      "category": "bed",
+      "name": "Bed|4|2|0",
+      "attributes": [
+        "procthor_object_id=Bed|4|2|0",
+        "procthor_object_type=Bed",
+        "footprint_source=bbox",
+        "num_grid_cells=1323",
+        "footprint_area=3.3075000000000006"
+      ],
+      "center_grid": [
+        211,
+        73
+      ],
+      "metadata_grid_cell": [
+        211,
+        73
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 1323,
+      "footprint_source": "bbox",
+      "description": "the bed closest to the alarm clock",
+      "description_constraints": {
+        "category": "bed",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        2
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 3,
+      "category": "bed",
+      "name": "Bed|6|1|0",
+      "attributes": [
+        "procthor_object_id=Bed|6|1|0",
+        "procthor_object_type=Bed",
+        "footprint_source=bbox",
+        "num_grid_cells=1050",
+        "footprint_area=2.625"
+      ],
+      "center_grid": [
+        344,
+        294
+      ],
+      "metadata_grid_cell": [
+        344,
+        294
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 1050,
+      "footprint_source": "bbox",
+      "description": "the bed in the same room as the alarm clock",
+      "description_constraints": {
+        "category": "bed",
+        "relation": "same_room",
+        "anchor": {
+          "category": "alarm_clock"
+        }
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        3
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 4,
+      "category": "bed",
+      "name": "Bed|4|0",
+      "attributes": [
+        "procthor_object_id=Bed|4|0",
+        "procthor_object_type=Bed",
+        "footprint_source=bbox",
+        "num_grid_cells=999",
+        "footprint_area=2.4975000000000005"
+      ],
+      "center_grid": [
+        338,
+        29
+      ],
+      "metadata_grid_cell": [
+        339,
+        29
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 999,
+      "footprint_source": "bbox",
+      "description": "the bed farthest from the alarm clock",
+      "description_constraints": {
+        "category": "bed",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        4
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 5,
+      "category": "book",
+      "name": "Book|surface|4|7",
+      "attributes": [
+        "procthor_object_id=Book|surface|4|7",
+        "procthor_object_type=Book",
+        "footprint_source=bbox",
+        "num_grid_cells=12",
+        "footprint_area=0.030000000000000006"
+      ],
+      "center_grid": [
+        355,
+        77
+      ],
+      "metadata_grid_cell": [
+        355,
+        77
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 12,
+      "footprint_source": "bbox",
+      "description": "the book closest to the alarm clock",
+      "description_constraints": {
+        "category": "book",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        5
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 6,
+      "category": "book",
+      "name": "Book|surface|8|22",
+      "attributes": [
+        "procthor_object_id=Book|surface|8|22",
+        "procthor_object_type=Book",
+        "footprint_source=bbox",
+        "num_grid_cells=15",
+        "footprint_area=0.037500000000000006"
+      ],
+      "center_grid": [
+        30,
+        210
+      ],
+      "metadata_grid_cell": [
+        30,
+        210
+      ],
+      "room_id": 5,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 15,
+      "footprint_source": "bbox",
+      "description": "the book in the kitchen",
+      "description_constraints": {
+        "category": "book",
+        "room_category": "kitchen"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        6
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 7,
+      "category": "bowl",
+      "name": "Bowl|surface|9|35",
+      "attributes": [
+        "procthor_object_id=Bowl|surface|9|35",
+        "procthor_object_type=Bowl",
+        "footprint_source=bbox",
+        "num_grid_cells=22",
+        "footprint_area=0.05500000000000001"
+      ],
+      "center_grid": [
+        220,
+        239
+      ],
+      "metadata_grid_cell": [
+        220,
+        239
+      ],
+      "room_id": 6,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 22,
+      "footprint_source": "bbox",
+      "description": "the bowl in the living room",
+      "description_constraints": {
+        "category": "bowl",
+        "room_category": "living_room"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        7
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 8,
+      "category": "bowl",
+      "name": "Bowl|surface|6|13",
+      "attributes": [
+        "procthor_object_id=Bowl|surface|6|13",
+        "procthor_object_type=Bowl",
+        "footprint_source=bbox",
+        "num_grid_cells=16",
+        "footprint_area=0.04000000000000001"
+      ],
+      "center_grid": [
+        300,
+        274
+      ],
+      "metadata_grid_cell": [
+        300,
+        274
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 16,
+      "footprint_source": "bbox",
+      "description": "the bowl in the same room as the alarm clock",
+      "description_constraints": {
+        "category": "bowl",
+        "relation": "same_room",
+        "anchor": {
+          "category": "alarm_clock"
+        }
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        8
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 9,
+      "category": "box",
+      "name": "Box|surface|4|6",
+      "attributes": [
+        "procthor_object_id=Box|surface|4|6",
+        "procthor_object_type=Box",
+        "footprint_source=bbox",
+        "num_grid_cells=35",
+        "footprint_area=0.08750000000000001"
+      ],
+      "center_grid": [
+        264,
+        88
+      ],
+      "metadata_grid_cell": [
+        264,
+        88
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 35,
+      "footprint_source": "bbox",
+      "description": "the box closest to the alarm clock",
+      "description_constraints": {
+        "category": "box",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        9
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 10,
+      "category": "box",
+      "name": "Box|surface|4|5",
+      "attributes": [
+        "procthor_object_id=Box|surface|4|5",
+        "procthor_object_type=Box",
+        "footprint_source=bbox",
+        "num_grid_cells=72",
+        "footprint_area=0.18000000000000002"
+      ],
+      "center_grid": [
+        255,
+        83
+      ],
+      "metadata_grid_cell": [
+        255,
+        83
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 72,
+      "footprint_source": "bbox",
+      "description": "the box second closest to the alarm clock",
+      "description_constraints": {
+        "category": "box",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        10
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 11,
+      "category": "box",
+      "name": "Box|4|5",
+      "attributes": [
+        "procthor_object_id=Box|4|5",
+        "procthor_object_type=Box",
+        "footprint_source=bbox",
+        "num_grid_cells=42",
+        "footprint_area=0.10500000000000001"
+      ],
+      "center_grid": [
+        300,
+        95
+      ],
+      "metadata_grid_cell": [
+        301,
+        92
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 42,
+      "footprint_source": "bbox",
+      "description": "the box farthest from the alarm clock",
+      "description_constraints": {
+        "category": "box",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        11
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 12,
+      "category": "cabinet",
+      "name": "Cabinet",
+      "attributes": [
+        "procthor_object_id=Dresser|4|1___2",
+        "procthor_object_type=Cabinet",
+        "footprint_source=bbox",
+        "num_grid_cells=100",
+        "footprint_area=0.25"
+      ],
+      "center_grid": [
+        348,
+        82
+      ],
+      "metadata_grid_cell": [
+        343,
+        77
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 100,
+      "footprint_source": "bbox",
+      "description": "the cabinet second closest to the alarm clock",
+      "description_constraints": {
+        "category": "cabinet",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        12
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 13,
+      "category": "cabinet",
+      "name": "Cabinet",
+      "attributes": [
+        "procthor_object_id=Dresser|4|1___0",
+        "procthor_object_type=Cabinet",
+        "footprint_source=bbox",
+        "num_grid_cells=100",
+        "footprint_area=0.25"
+      ],
+      "center_grid": [
+        348,
+        62
+      ],
+      "metadata_grid_cell": [
+        343,
+        57
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 100,
+      "footprint_source": "bbox",
+      "description": "the cabinet farthest from the alarm clock",
+      "description_constraints": {
+        "category": "cabinet",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        13
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 14,
+      "category": "cabinet",
+      "name": "Cabinet",
+      "attributes": [
+        "procthor_object_id=Dresser|4|1___1",
+        "procthor_object_type=Cabinet",
+        "footprint_source=bbox",
+        "num_grid_cells=90",
+        "footprint_area=0.225"
+      ],
+      "center_grid": [
+        348,
+        72
+      ],
+      "metadata_grid_cell": [
+        343,
+        77
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 90,
+      "footprint_source": "bbox",
+      "description": "the cabinet second farthest from the alarm clock",
+      "description_constraints": {
+        "category": "cabinet",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        14
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 15,
+      "category": "cabinet",
+      "name": "Cabinet",
+      "attributes": [
+        "procthor_object_id=Dresser|4|1___3",
+        "procthor_object_type=Cabinet",
+        "footprint_source=bbox",
+        "num_grid_cells=100",
+        "footprint_area=0.25"
+      ],
+      "center_grid": [
+        348,
+        92
+      ],
+      "metadata_grid_cell": [
+        343,
+        98
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 100,
+      "footprint_source": "bbox",
+      "description": "the cabinet closest to the alarm clock",
+      "description_constraints": {
+        "category": "cabinet",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        15
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 16,
+      "category": "chair",
+      "name": "Chair|4|4|1",
+      "attributes": [
+        "procthor_object_id=Chair|4|4|1",
+        "procthor_object_type=Chair",
+        "footprint_source=bbox",
+        "num_grid_cells=156",
+        "footprint_area=0.39000000000000007"
+      ],
+      "center_grid": [
+        264,
+        74
+      ],
+      "metadata_grid_cell": [
+        264,
+        73
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 156,
+      "footprint_source": "bbox",
+      "description": "the chair in the same room as the pen",
+      "description_constraints": {
+        "category": "chair",
+        "relation": "same_room",
+        "anchor": {
+          "category": "pen"
+        }
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        16
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 17,
+      "category": "chair",
+      "name": "Chair|6|3|2",
+      "attributes": [
+        "procthor_object_id=Chair|6|3|2",
+        "procthor_object_type=Chair",
+        "footprint_source=bbox",
+        "num_grid_cells=77",
+        "footprint_area=0.1925"
+      ],
+      "center_grid": [
+        271,
+        267
+      ],
+      "metadata_grid_cell": [
+        271,
+        267
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 77,
+      "footprint_source": "bbox",
+      "description": "the chair closest to the alarm clock",
+      "description_constraints": {
+        "category": "chair",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        17
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 18,
+      "category": "chair",
+      "name": "Chair|6|3|4",
+      "attributes": [
+        "procthor_object_id=Chair|6|3|4",
+        "procthor_object_type=Chair",
+        "footprint_source=bbox",
+        "num_grid_cells=78",
+        "footprint_area=0.19500000000000003"
+      ],
+      "center_grid": [
+        301,
+        255
+      ],
+      "metadata_grid_cell": [
+        301,
+        255
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 78,
+      "footprint_source": "bbox",
+      "description": "the chair second closest to the alarm clock",
+      "description_constraints": {
+        "category": "chair",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        18
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 19,
+      "category": "chair",
+      "name": "Chair|6|3|5",
+      "attributes": [
+        "procthor_object_id=Chair|6|3|5",
+        "procthor_object_type=Chair",
+        "footprint_source=bbox",
+        "num_grid_cells=78",
+        "footprint_area=0.19500000000000003"
+      ],
+      "center_grid": [
+        301,
+        279
+      ],
+      "metadata_grid_cell": [
+        300,
+        278
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 78,
+      "footprint_source": "bbox",
+      "description": "the chair closest to the pencil",
+      "description_constraints": {
+        "category": "chair",
+        "relation": "nearest",
+        "anchor": {
+          "category": "pencil"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        19
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 20,
+      "category": "chair",
+      "name": "Chair|6|0",
+      "attributes": [
+        "procthor_object_id=Chair|6|0",
+        "procthor_object_type=Chair",
+        "footprint_source=bbox",
+        "num_grid_cells=81",
+        "footprint_area=0.2025"
+      ],
+      "center_grid": [
+        352,
+        191
+      ],
+      "metadata_grid_cell": [
+        352,
+        191
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 81,
+      "footprint_source": "bbox",
+      "description": "the chair farthest from the counter top",
+      "description_constraints": {
+        "category": "chair",
+        "relation": "farthest",
+        "anchor": {
+          "category": "counter_top"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        20
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 21,
+      "category": "chair",
+      "name": "Chair|8|2|1",
+      "attributes": [
+        "procthor_object_id=Chair|8|2|1",
+        "procthor_object_type=Chair",
+        "footprint_source=bbox",
+        "num_grid_cells=218",
+        "footprint_area=0.545"
+      ],
+      "center_grid": [
+        50,
+        210
+      ],
+      "metadata_grid_cell": [
+        49,
+        210
+      ],
+      "room_id": 5,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 218,
+      "footprint_source": "bbox",
+      "description": "the chair second farthest from the alarm clock",
+      "description_constraints": {
+        "category": "chair",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        21
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 22,
+      "category": "chair",
+      "name": "Chair|8|2|2",
+      "attributes": [
+        "procthor_object_id=Chair|8|2|2",
+        "procthor_object_type=Chair",
+        "footprint_source=bbox",
+        "num_grid_cells=216",
+        "footprint_area=0.54"
+      ],
+      "center_grid": [
+        26,
+        210
+      ],
+      "metadata_grid_cell": [
+        26,
+        209
+      ],
+      "room_id": 5,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 216,
+      "footprint_source": "bbox",
+      "description": "the chair farthest from the alarm clock",
+      "description_constraints": {
+        "category": "chair",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        22
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 23,
+      "category": "chair",
+      "name": "Chair|6|3|3",
+      "attributes": [
+        "procthor_object_id=Chair|6|3|3",
+        "procthor_object_type=Chair",
+        "footprint_source=bbox",
+        "num_grid_cells=79",
+        "footprint_area=0.1975"
+      ],
+      "center_grid": [
+        283,
+        279
+      ],
+      "metadata_grid_cell": [
+        283,
+        278
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 79,
+      "footprint_source": "bbox",
+      "description": "the chair second closest to the pencil",
+      "description_constraints": {
+        "category": "chair",
+        "relation": "nearest",
+        "anchor": {
+          "category": "pencil"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        23
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 24,
+      "category": "chair",
+      "name": "Chair|6|3|1",
+      "attributes": [
+        "procthor_object_id=Chair|6|3|1",
+        "procthor_object_type=Chair",
+        "footprint_source=bbox",
+        "num_grid_cells=80",
+        "footprint_area=0.2"
+      ],
+      "center_grid": [
+        312,
+        266
+      ],
+      "metadata_grid_cell": [
+        312,
+        267
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 80,
+      "footprint_source": "bbox",
+      "description": "the chair second farthest from the counter top",
+      "description_constraints": {
+        "category": "chair",
+        "relation": "farthest",
+        "anchor": {
+          "category": "counter_top"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        24
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 25,
+      "category": "counter_top",
+      "name": "CounterTop|8|0",
+      "attributes": [
+        "procthor_object_id=CounterTop|8|0",
+        "procthor_object_type=CounterTop",
+        "footprint_source=bbox",
+        "num_grid_cells=1369",
+        "footprint_area=3.4225000000000003"
+      ],
+      "center_grid": [
+        34,
+        162
+      ],
+      "metadata_grid_cell": [
+        15,
+        144
+      ],
+      "room_id": 5,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 1369,
+      "footprint_source": "bbox",
+      "description": "the counter top",
+      "description_constraints": {
+        "category": "counter_top"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        25
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 26,
+      "category": "credit_card",
+      "name": "CreditCard|surface|9|34",
+      "attributes": [
+        "procthor_object_id=CreditCard|surface|9|34",
+        "procthor_object_type=CreditCard",
+        "footprint_source=bbox",
+        "num_grid_cells=2",
+        "footprint_area=0.005000000000000001"
+      ],
+      "center_grid": [
+        216,
+        252
+      ],
+      "metadata_grid_cell": [
+        216,
+        252
+      ],
+      "room_id": 6,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 2,
+      "footprint_source": "bbox",
+      "description": "the credit card in the living room",
+      "description_constraints": {
+        "category": "credit_card",
+        "room_category": "living_room"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        26
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 27,
+      "category": "credit_card",
+      "name": "CreditCard|surface|6|17",
+      "attributes": [
+        "procthor_object_id=CreditCard|surface|6|17",
+        "procthor_object_type=CreditCard",
+        "footprint_source=bbox",
+        "num_grid_cells=2",
+        "footprint_area=0.005000000000000001"
+      ],
+      "center_grid": [
+        295,
+        307
+      ],
+      "metadata_grid_cell": [
+        295,
+        307
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 2,
+      "footprint_source": "bbox",
+      "description": "the credit card in the same room as the alarm clock",
+      "description_constraints": {
+        "category": "credit_card",
+        "relation": "same_room",
+        "anchor": {
+          "category": "alarm_clock"
+        }
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        27
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 28,
+      "category": "cup",
+      "name": "Cup|surface|8|24",
+      "attributes": [
+        "procthor_object_id=Cup|surface|8|24",
+        "procthor_object_type=Cup",
+        "footprint_source=bbox",
+        "num_grid_cells=6",
+        "footprint_area=0.015000000000000003"
+      ],
+      "center_grid": [
+        30,
+        205
+      ],
+      "metadata_grid_cell": [
+        30,
+        205
+      ],
+      "room_id": 5,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 6,
+      "footprint_source": "bbox",
+      "description": "the cup",
+      "description_constraints": {
+        "category": "cup"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        28
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 29,
+      "category": "dining_table",
+      "name": "DiningTable|8|2|0",
+      "attributes": [
+        "procthor_object_id=DiningTable|8|2|0",
+        "procthor_object_type=DiningTable",
+        "footprint_source=bbox",
+        "num_grid_cells=720",
+        "footprint_area=1.8"
+      ],
+      "center_grid": [
+        38,
+        210
+      ],
+      "metadata_grid_cell": [
+        38,
+        210
+      ],
+      "room_id": 5,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 720,
+      "footprint_source": "bbox",
+      "description": "the dining table in the kitchen",
+      "description_constraints": {
+        "category": "dining_table",
+        "room_category": "kitchen"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        29
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 30,
+      "category": "dining_table",
+      "name": "DiningTable|6|3|0",
+      "attributes": [
+        "procthor_object_id=DiningTable|6|3|0",
+        "procthor_object_type=DiningTable",
+        "footprint_source=bbox",
+        "num_grid_cells=720",
+        "footprint_area=1.8"
+      ],
+      "center_grid": [
+        291,
+        266
+      ],
+      "metadata_grid_cell": [
+        292,
+        267
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 720,
+      "footprint_source": "bbox",
+      "description": "the dining table in the same room as the alarm clock",
+      "description_constraints": {
+        "category": "dining_table",
+        "relation": "same_room",
+        "anchor": {
+          "category": "alarm_clock"
+        }
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        30
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 31,
+      "category": "dining_table",
+      "name": "DiningTable|9|0",
+      "attributes": [
+        "procthor_object_id=DiningTable|9|0",
+        "procthor_object_type=DiningTable",
+        "footprint_source=bbox",
+        "num_grid_cells=1056",
+        "footprint_area=2.6400000000000006"
+      ],
+      "center_grid": [
+        212,
+        249
+      ],
+      "metadata_grid_cell": [
+        212,
+        249
+      ],
+      "room_id": 6,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 1056,
+      "footprint_source": "bbox",
+      "description": "the dining table in the living room",
+      "description_constraints": {
+        "category": "dining_table",
+        "room_category": "living_room"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        31
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 32,
+      "category": "dining_table",
+      "name": "DiningTable|4|4|0",
+      "attributes": [
+        "procthor_object_id=DiningTable|4|4|0",
+        "procthor_object_type=DiningTable",
+        "footprint_source=bbox",
+        "num_grid_cells=720",
+        "footprint_area=1.8"
+      ],
+      "center_grid": [
+        263,
+        86
+      ],
+      "metadata_grid_cell": [
+        264,
+        85
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 720,
+      "footprint_source": "bbox",
+      "description": "the dining table second farthest from the alarm clock",
+      "description_constraints": {
+        "category": "dining_table",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        32
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 33,
+      "category": "dog_bed",
+      "name": "DogBed|6|6",
+      "attributes": [
+        "procthor_object_id=DogBed|6|6",
+        "procthor_object_type=DogBed",
+        "footprint_source=bbox",
+        "num_grid_cells=320",
+        "footprint_area=0.8"
+      ],
+      "center_grid": [
+        314,
+        220
+      ],
+      "metadata_grid_cell": [
+        314,
+        221
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 320,
+      "footprint_source": "bbox",
+      "description": "the dog bed",
+      "description_constraints": {
+        "category": "dog_bed"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        33
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 34,
+      "category": "doorway",
+      "name": "door|4|5",
+      "attributes": [
+        "procthor_object_id=door|4|5",
+        "procthor_object_type=Doorway",
+        "footprint_source=bbox",
+        "num_grid_cells=420",
+        "footprint_area=1.05"
+      ],
+      "center_grid": [
+        194,
+        34
+      ],
+      "metadata_grid_cell": [
+        186,
+        24
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 420,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 35,
+      "category": "doorway",
+      "name": "door|6|7",
+      "attributes": [
+        "procthor_object_id=door|6|7",
+        "procthor_object_type=Doorway",
+        "footprint_source=bbox",
+        "num_grid_cells=420",
+        "footprint_area=1.05"
+      ],
+      "center_grid": [
+        269,
+        178
+      ],
+      "metadata_grid_cell": [
+        259,
+        186
+      ],
+      "room_id": 4,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 420,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 36,
+      "category": "doorway",
+      "name": "door|6|9",
+      "attributes": [
+        "procthor_object_id=door|6|9",
+        "procthor_object_type=Doorway",
+        "footprint_source=bbox",
+        "num_grid_cells=800",
+        "footprint_area=2.0"
+      ],
+      "center_grid": [
+        220,
+        288
+      ],
+      "metadata_grid_cell": [
+        229,
+        309
+      ],
+      "room_id": 6,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 800,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 37,
+      "category": "doorway",
+      "name": "door|4|9",
+      "attributes": [
+        "procthor_object_id=door|4|9",
+        "procthor_object_type=Doorway",
+        "footprint_source=bbox",
+        "num_grid_cells=418",
+        "footprint_area=1.0450000000000002"
+      ],
+      "center_grid": [
+        200,
+        135
+      ],
+      "metadata_grid_cell": [
+        191,
+        143
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 418,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 38,
+      "category": "doorway",
+      "name": "door|1|8",
+      "attributes": [
+        "procthor_object_id=door|1|8",
+        "procthor_object_type=Doorway",
+        "footprint_source=bbox",
+        "num_grid_cells=156",
+        "footprint_area=0.39000000000000007"
+      ],
+      "center_grid": [
+        81,
+        314
+      ],
+      "metadata_grid_cell": [
+        101,
+        315
+      ],
+      "room_id": 5,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 156,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 39,
+      "category": "drawer",
+      "name": "Drawer",
+      "attributes": [
+        "procthor_object_id=SideTable|6|4___0",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=55",
+        "footprint_area=0.1375"
+      ],
+      "center_grid": [
+        237,
+        209
+      ],
+      "metadata_grid_cell": [
+        235,
+        209
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 55,
+      "footprint_source": "bbox",
+      "description": "the drawer second closest to the alarm clock",
+      "description_constraints": {
+        "category": "drawer",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        39
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 40,
+      "category": "drawer",
+      "name": "Drawer (1)",
+      "attributes": [
+        "procthor_object_id=SideTable|6|4___1",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=55",
+        "footprint_area=0.1375"
+      ],
+      "center_grid": [
+        235,
+        209
+      ],
+      "metadata_grid_cell": [
+        235,
+        209
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 55,
+      "footprint_source": "bbox",
+      "description": "the drawer closest to the alarm clock",
+      "description_constraints": {
+        "category": "drawer",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        40
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 41,
+      "category": "drawer",
+      "name": "Drawer (1)",
+      "attributes": [
+        "procthor_object_id=Dresser|6|2___8",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=160",
+        "footprint_area=0.4"
+      ],
+      "center_grid": [
+        311,
+        307
+      ],
+      "metadata_grid_cell": [
+        311,
+        307
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 160,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 42,
+      "category": "drawer",
+      "name": "Drawer (10)",
+      "attributes": [
+        "procthor_object_id=Dresser|6|2___1",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=160",
+        "footprint_area=0.4"
+      ],
+      "center_grid": [
+        295,
+        307
+      ],
+      "metadata_grid_cell": [
+        295,
+        307
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 160,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 43,
+      "category": "drawer",
+      "name": "Drawer (4)",
+      "attributes": [
+        "procthor_object_id=Dresser|6|2___7",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=160",
+        "footprint_area=0.4"
+      ],
+      "center_grid": [
+        295,
+        307
+      ],
+      "metadata_grid_cell": [
+        295,
+        307
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 160,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 44,
+      "category": "drawer",
+      "name": "Drawer (3)",
+      "attributes": [
+        "procthor_object_id=Dresser|6|2___6",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=160",
+        "footprint_area=0.4"
+      ],
+      "center_grid": [
+        311,
+        307
+      ],
+      "metadata_grid_cell": [
+        311,
+        307
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 160,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 45,
+      "category": "drawer",
+      "name": "Drawer (6)",
+      "attributes": [
+        "procthor_object_id=Dresser|6|2___5",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=160",
+        "footprint_area=0.4"
+      ],
+      "center_grid": [
+        295,
+        307
+      ],
+      "metadata_grid_cell": [
+        295,
+        307
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 160,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 46,
+      "category": "drawer",
+      "name": "Drawer (5)",
+      "attributes": [
+        "procthor_object_id=Dresser|6|2___4",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=160",
+        "footprint_area=0.4"
+      ],
+      "center_grid": [
+        311,
+        307
+      ],
+      "metadata_grid_cell": [
+        311,
+        307
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 160,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 47,
+      "category": "drawer",
+      "name": "Drawer (8)",
+      "attributes": [
+        "procthor_object_id=Dresser|6|2___3",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=160",
+        "footprint_area=0.4"
+      ],
+      "center_grid": [
+        295,
+        307
+      ],
+      "metadata_grid_cell": [
+        295,
+        307
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 160,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 48,
+      "category": "drawer",
+      "name": "Drawer (7)",
+      "attributes": [
+        "procthor_object_id=Dresser|6|2___2",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=160",
+        "footprint_area=0.4"
+      ],
+      "center_grid": [
+        311,
+        307
+      ],
+      "metadata_grid_cell": [
+        311,
+        307
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 160,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 49,
+      "category": "drawer",
+      "name": "Drawer (9)",
+      "attributes": [
+        "procthor_object_id=Dresser|6|2___0",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=160",
+        "footprint_area=0.4"
+      ],
+      "center_grid": [
+        311,
+        307
+      ],
+      "metadata_grid_cell": [
+        311,
+        307
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 160,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 50,
+      "category": "drawer",
+      "name": "Drawer",
+      "attributes": [
+        "procthor_object_id=Dresser|4|1___4",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=40",
+        "footprint_area=0.1"
+      ],
+      "center_grid": [
+        345,
+        62
+      ],
+      "metadata_grid_cell": [
+        345,
+        62
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 40,
+      "footprint_source": "bbox",
+      "description": "the drawer farthest from the alarm clock",
+      "description_constraints": {
+        "category": "drawer",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        50
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 51,
+      "category": "drawer",
+      "name": "Drawer (1)",
+      "attributes": [
+        "procthor_object_id=Dresser|4|1___5",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=40",
+        "footprint_area=0.1"
+      ],
+      "center_grid": [
+        345,
+        72
+      ],
+      "metadata_grid_cell": [
+        345,
+        72
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 40,
+      "footprint_source": "bbox",
+      "description": "the drawer second farthest from the alarm clock",
+      "description_constraints": {
+        "category": "drawer",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        51
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 52,
+      "category": "drawer",
+      "name": "Drawer (3)",
+      "attributes": [
+        "procthor_object_id=Dresser|4|1___7",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=40",
+        "footprint_area=0.1"
+      ],
+      "center_grid": [
+        345,
+        93
+      ],
+      "metadata_grid_cell": [
+        345,
+        93
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 40,
+      "footprint_source": "bbox",
+      "description": "the drawer closest to the plunger",
+      "description_constraints": {
+        "category": "drawer",
+        "relation": "nearest",
+        "anchor": {
+          "category": "plunger"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        52
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 53,
+      "category": "drawer",
+      "name": "Drawer (2)",
+      "attributes": [
+        "procthor_object_id=Dresser|4|1___6",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=40",
+        "footprint_area=0.1"
+      ],
+      "center_grid": [
+        345,
+        82
+      ],
+      "metadata_grid_cell": [
+        345,
+        82
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 40,
+      "footprint_source": "bbox",
+      "description": "the drawer second closest to the plunger",
+      "description_constraints": {
+        "category": "drawer",
+        "relation": "nearest",
+        "anchor": {
+          "category": "plunger"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        53
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 54,
+      "category": "drawer",
+      "name": "Drawer (2)",
+      "attributes": [
+        "procthor_object_id=Dresser|6|2___9",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=160",
+        "footprint_area=0.4"
+      ],
+      "center_grid": [
+        295,
+        307
+      ],
+      "metadata_grid_cell": [
+        295,
+        307
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 160,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 55,
+      "category": "dresser",
+      "name": "Dresser|6|2",
+      "attributes": [
+        "procthor_object_id=Dresser|6|2",
+        "procthor_object_type=Dresser",
+        "footprint_source=bbox",
+        "num_grid_cells=384",
+        "footprint_area=0.9600000000000002"
+      ],
+      "center_grid": [
+        304,
+        308
+      ],
+      "metadata_grid_cell": [
+        303,
+        308
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 384,
+      "footprint_source": "bbox",
+      "description": "the dresser in the same room as the alarm clock",
+      "description_constraints": {
+        "category": "dresser",
+        "relation": "same_room",
+        "anchor": {
+          "category": "alarm_clock"
+        }
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        55
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 56,
+      "category": "dresser",
+      "name": "Dresser|4|1",
+      "attributes": [
+        "procthor_object_id=Dresser|4|1",
+        "procthor_object_type=Dresser",
+        "footprint_source=bbox",
+        "num_grid_cells=644",
+        "footprint_area=1.6100000000000003"
+      ],
+      "center_grid": [
+        353,
+        78
+      ],
+      "metadata_grid_cell": [
+        350,
+        77
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 644,
+      "footprint_source": "bbox",
+      "description": "the dresser farthest from the alarm clock",
+      "description_constraints": {
+        "category": "dresser",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        56
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 57,
+      "category": "egg",
+      "name": "Egg|surface|8|28",
+      "attributes": [
+        "procthor_object_id=Egg|surface|8|28",
+        "procthor_object_type=Egg",
+        "footprint_source=bbox",
+        "num_grid_cells=1",
+        "footprint_area=0.0025000000000000005"
+      ],
+      "center_grid": [
+        38,
+        155
+      ],
+      "metadata_grid_cell": [
+        38,
+        155
+      ],
+      "room_id": 5,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 1,
+      "footprint_source": "bbox",
+      "description": "the egg farthest from the alarm clock",
+      "description_constraints": {
+        "category": "egg",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        57
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 58,
+      "category": "egg",
+      "name": "Egg|surface|8|31",
+      "attributes": [
+        "procthor_object_id=Egg|surface|8|31",
+        "procthor_object_type=Egg",
+        "footprint_source=bbox",
+        "num_grid_cells=1",
+        "footprint_area=0.0025000000000000005"
+      ],
+      "center_grid": [
+        107,
+        150
+      ],
+      "metadata_grid_cell": [
+        107,
+        150
+      ],
+      "room_id": 5,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 1,
+      "footprint_source": "bbox",
+      "description": "the egg closest to the alarm clock",
+      "description_constraints": {
+        "category": "egg",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        58
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 59,
+      "category": "egg",
+      "name": "Egg|surface|8|32",
+      "attributes": [
+        "procthor_object_id=Egg|surface|8|32",
+        "procthor_object_type=Egg",
+        "footprint_source=center_fallback",
+        "num_grid_cells=5",
+        "footprint_area=0.0125"
+      ],
+      "center_grid": [
+        102,
+        149
+      ],
+      "metadata_grid_cell": [
+        102,
+        149
+      ],
+      "room_id": 5,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 5,
+      "footprint_source": "center_fallback",
+      "description": "the egg second closest to the alarm clock",
+      "description_constraints": {
+        "category": "egg",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        59
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 60,
+      "category": "faucet",
+      "name": "Faucet|7|1|1",
+      "attributes": [
+        "procthor_object_id=Faucet|7|1|1",
+        "procthor_object_type=Faucet",
+        "footprint_source=bbox",
+        "num_grid_cells=60",
+        "footprint_area=0.15000000000000002"
+      ],
+      "center_grid": [
+        304,
+        184
+      ],
+      "metadata_grid_cell": [
+        304,
+        184
+      ],
+      "room_id": 4,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 60,
+      "footprint_source": "bbox",
+      "description": "the faucet in the smallest room",
+      "description_constraints": {
+        "category": "faucet",
+        "room_rank": "smallest"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        60
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 61,
+      "category": "faucet",
+      "name": "Faucet|5|1|1",
+      "attributes": [
+        "procthor_object_id=Faucet|5|1|1",
+        "procthor_object_type=Faucet",
+        "footprint_source=bbox",
+        "num_grid_cells=4",
+        "footprint_area=0.010000000000000002"
+      ],
+      "center_grid": [
+        140,
+        142
+      ],
+      "metadata_grid_cell": [
+        140,
+        142
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 4,
+      "footprint_source": "bbox",
+      "description": "the faucet farthest from the alarm clock",
+      "description_constraints": {
+        "category": "faucet",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        61
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 62,
+      "category": "fridge",
+      "name": "Fridge|8|1",
+      "attributes": [
+        "procthor_object_id=Fridge|8|1",
+        "procthor_object_type=Fridge",
+        "footprint_source=bbox",
+        "num_grid_cells=288",
+        "footprint_area=0.7200000000000001"
+      ],
+      "center_grid": [
+        100,
+        152
+      ],
+      "metadata_grid_cell": [
+        100,
+        151
+      ],
+      "room_id": 5,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 288,
+      "footprint_source": "bbox",
+      "description": "the fridge",
+      "description_constraints": {
+        "category": "fridge"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        62
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 63,
+      "category": "garbage_bag",
+      "name": "GarbageBag|8|3",
+      "attributes": [
+        "procthor_object_id=GarbageBag|8|3",
+        "procthor_object_type=GarbageBag",
+        "footprint_source=bbox",
+        "num_grid_cells=110",
+        "footprint_area=0.275"
+      ],
+      "center_grid": [
+        100,
+        198
+      ],
+      "metadata_grid_cell": [
+        100,
+        198
+      ],
+      "room_id": 5,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 110,
+      "footprint_source": "bbox",
+      "description": "the garbage bag",
+      "description_constraints": {
+        "category": "garbage_bag"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        63
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 64,
+      "category": "garbage_can",
+      "name": "GarbageCan|7|2",
+      "attributes": [
+        "procthor_object_id=GarbageCan|7|2",
+        "procthor_object_type=GarbageCan",
+        "footprint_source=bbox",
+        "num_grid_cells=48",
+        "footprint_area=0.12000000000000002"
+      ],
+      "center_grid": [
+        276,
+        104
+      ],
+      "metadata_grid_cell": [
+        277,
+        104
+      ],
+      "room_id": 4,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 48,
+      "footprint_source": "bbox",
+      "description": "the garbage can in the smallest room",
+      "description_constraints": {
+        "category": "garbage_can",
+        "room_rank": "smallest"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        64
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 65,
+      "category": "garbage_can",
+      "name": "GarbageCan|5|2",
+      "attributes": [
+        "procthor_object_id=GarbageCan|5|2",
+        "procthor_object_type=GarbageCan",
+        "footprint_source=bbox",
+        "num_grid_cells=56",
+        "footprint_area=0.14"
+      ],
+      "center_grid": [
+        105,
+        74
+      ],
+      "metadata_grid_cell": [
+        105,
+        74
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 56,
+      "footprint_source": "bbox",
+      "description": "the garbage can farthest from the alarm clock",
+      "description_constraints": {
+        "category": "garbage_can",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        65
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 66,
+      "category": "house_plant",
+      "name": "HousePlant|surface|8|26",
+      "attributes": [
+        "procthor_object_id=HousePlant|surface|8|26",
+        "procthor_object_type=HousePlant",
+        "footprint_source=bbox",
+        "num_grid_cells=12",
+        "footprint_area=0.030000000000000006"
+      ],
+      "center_grid": [
+        47,
+        147
+      ],
+      "metadata_grid_cell": [
+        47,
+        147
+      ],
+      "room_id": 5,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 12,
+      "footprint_source": "bbox",
+      "description": "the house plant in the kitchen",
+      "description_constraints": {
+        "category": "house_plant",
+        "room_category": "kitchen"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        66
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 67,
+      "category": "house_plant",
+      "name": "HousePlant|surface|6|12",
+      "attributes": [
+        "procthor_object_id=HousePlant|surface|6|12",
+        "procthor_object_type=HousePlant",
+        "footprint_source=bbox",
+        "num_grid_cells=42",
+        "footprint_area=0.10500000000000001"
+      ],
+      "center_grid": [
+        291,
+        266
+      ],
+      "metadata_grid_cell": [
+        292,
+        267
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 42,
+      "footprint_source": "bbox",
+      "description": "the house plant in the same room as the alarm clock",
+      "description_constraints": {
+        "category": "house_plant",
+        "relation": "same_room",
+        "anchor": {
+          "category": "alarm_clock"
+        }
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        67
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 68,
+      "category": "house_plant",
+      "name": "HousePlant|9|2|0",
+      "attributes": [
+        "procthor_object_id=HousePlant|9|2|0",
+        "procthor_object_type=HousePlant",
+        "footprint_source=bbox",
+        "num_grid_cells=25",
+        "footprint_area=0.0625"
+      ],
+      "center_grid": [
+        162,
+        311
+      ],
+      "metadata_grid_cell": [
+        162,
+        310
+      ],
+      "room_id": 6,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 25,
+      "footprint_source": "bbox",
+      "description": "the house plant in the living room",
+      "description_constraints": {
+        "category": "house_plant",
+        "room_category": "living_room"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        68
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 69,
+      "category": "laptop",
+      "name": "Laptop|surface|4|1",
+      "attributes": [
+        "procthor_object_id=Laptop|surface|4|1",
+        "procthor_object_type=Laptop",
+        "footprint_source=bbox",
+        "num_grid_cells=35",
+        "footprint_area=0.08750000000000001"
+      ],
+      "center_grid": [
+        268,
+        83
+      ],
+      "metadata_grid_cell": [
+        268,
+        83
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 35,
+      "footprint_source": "bbox",
+      "description": "the laptop farthest from the alarm clock",
+      "description_constraints": {
+        "category": "laptop",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        69
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 70,
+      "category": "laptop",
+      "name": "Laptop|surface|6|14",
+      "attributes": [
+        "procthor_object_id=Laptop|surface|6|14",
+        "procthor_object_type=Laptop",
+        "footprint_source=bbox",
+        "num_grid_cells=56",
+        "footprint_area=0.14"
+      ],
+      "center_grid": [
+        283,
+        267
+      ],
+      "metadata_grid_cell": [
+        283,
+        267
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 56,
+      "footprint_source": "bbox",
+      "description": "the laptop in the same room as the alarm clock",
+      "description_constraints": {
+        "category": "laptop",
+        "relation": "same_room",
+        "anchor": {
+          "category": "alarm_clock"
+        }
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        70
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 71,
+      "category": "mug",
+      "name": "Mug|surface|6|11",
+      "attributes": [
+        "procthor_object_id=Mug|surface|6|11",
+        "procthor_object_type=Mug",
+        "footprint_source=bbox",
+        "num_grid_cells=9",
+        "footprint_area=0.022500000000000003"
+      ],
+      "center_grid": [
+        353,
+        229
+      ],
+      "metadata_grid_cell": [
+        353,
+        229
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 9,
+      "footprint_source": "bbox",
+      "description": "the mug in the same room as the alarm clock",
+      "description_constraints": {
+        "category": "mug",
+        "relation": "same_room",
+        "anchor": {
+          "category": "alarm_clock"
+        }
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        71
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 72,
+      "category": "mug",
+      "name": "Mug|surface|4|2",
+      "attributes": [
+        "procthor_object_id=Mug|surface|4|2",
+        "procthor_object_type=Mug",
+        "footprint_source=bbox",
+        "num_grid_cells=2",
+        "footprint_area=0.005000000000000001"
+      ],
+      "center_grid": [
+        277,
+        78
+      ],
+      "metadata_grid_cell": [
+        277,
+        78
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 2,
+      "footprint_source": "bbox",
+      "description": "the mug second closest to the alarm clock",
+      "description_constraints": {
+        "category": "mug",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        72
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 73,
+      "category": "mug",
+      "name": "Mug|surface|8|25",
+      "attributes": [
+        "procthor_object_id=Mug|surface|8|25",
+        "procthor_object_type=Mug",
+        "footprint_source=bbox",
+        "num_grid_cells=6",
+        "footprint_area=0.015000000000000003"
+      ],
+      "center_grid": [
+        38,
+        196
+      ],
+      "metadata_grid_cell": [
+        38,
+        196
+      ],
+      "room_id": 5,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 6,
+      "footprint_source": "bbox",
+      "description": "the mug in the kitchen",
+      "description_constraints": {
+        "category": "mug",
+        "room_category": "kitchen"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        73
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 74,
+      "category": "painting",
+      "name": "Painting|9|6",
+      "attributes": [
+        "procthor_object_id=Painting|9|6",
+        "procthor_object_type=Painting",
+        "footprint_source=center_fallback",
+        "num_grid_cells=5",
+        "footprint_area=0.0125"
+      ],
+      "center_grid": [
+        229,
+        164
+      ],
+      "metadata_grid_cell": [
+        229,
+        164
+      ],
+      "room_id": 4,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 5,
+      "footprint_source": "center_fallback",
+      "description": "the painting second closest to the garbage can in the smallest room",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "nearest",
+        "anchor": {
+          "category": "garbage_can",
+          "room_rank": "smallest"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 3,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        74
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 75,
+      "category": "painting",
+      "name": "Painting|5|3",
+      "attributes": [
+        "procthor_object_id=Painting|5|3",
+        "procthor_object_type=Painting",
+        "footprint_source=bbox",
+        "num_grid_cells=18",
+        "footprint_area=0.045000000000000005"
+      ],
+      "center_grid": [
+        160,
+        143
+      ],
+      "metadata_grid_cell": [
+        160,
+        143
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 18,
+      "footprint_source": "bbox",
+      "description": "the painting second closest to the fridge",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "nearest",
+        "anchor": {
+          "category": "fridge"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        75
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 76,
+      "category": "painting",
+      "name": "Painting|5|4",
+      "attributes": [
+        "procthor_object_id=Painting|5|4",
+        "procthor_object_type=Painting",
+        "footprint_source=center_fallback",
+        "num_grid_cells=5",
+        "footprint_area=0.0125"
+      ],
+      "center_grid": [
+        171,
+        15
+      ],
+      "metadata_grid_cell": [
+        171,
+        15
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 5,
+      "footprint_source": "center_fallback",
+      "description": "the painting second farthest from the pencil",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "farthest",
+        "anchor": {
+          "category": "pencil"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        76
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 77,
+      "category": "painting",
+      "name": "Painting|6|8",
+      "attributes": [
+        "procthor_object_id=Painting|6|8",
+        "procthor_object_type=Painting",
+        "footprint_source=bbox",
+        "num_grid_cells=14",
+        "footprint_area=0.035"
+      ],
+      "center_grid": [
+        357,
+        216
+      ],
+      "metadata_grid_cell": [
+        357,
+        216
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 14,
+      "footprint_source": "bbox",
+      "description": "the painting second farthest from the counter top",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "farthest",
+        "anchor": {
+          "category": "counter_top"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        77
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 78,
+      "category": "painting",
+      "name": "Painting|5|5",
+      "attributes": [
+        "procthor_object_id=Painting|5|5",
+        "procthor_object_type=Painting",
+        "footprint_source=center_fallback",
+        "num_grid_cells=5",
+        "footprint_area=0.0125"
+      ],
+      "center_grid": [
+        143,
+        15
+      ],
+      "metadata_grid_cell": [
+        143,
+        15
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 5,
+      "footprint_source": "center_fallback",
+      "description": "the painting second farthest from the alarm clock",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        78
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 79,
+      "category": "painting",
+      "name": "Painting|4|6",
+      "attributes": [
+        "procthor_object_id=Painting|4|6",
+        "procthor_object_type=Painting",
+        "footprint_source=bbox",
+        "num_grid_cells=16",
+        "footprint_area=0.04000000000000001"
+      ],
+      "center_grid": [
+        357,
+        70
+      ],
+      "metadata_grid_cell": [
+        357,
+        69
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 16,
+      "footprint_source": "bbox",
+      "description": "the painting farthest from the counter top",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "farthest",
+        "anchor": {
+          "category": "counter_top"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        79
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 80,
+      "category": "painting",
+      "name": "Painting|4|8",
+      "attributes": [
+        "procthor_object_id=Painting|4|8",
+        "procthor_object_type=Painting",
+        "footprint_source=center_fallback",
+        "num_grid_cells=5",
+        "footprint_area=0.0125"
+      ],
+      "center_grid": [
+        186,
+        94
+      ],
+      "metadata_grid_cell": [
+        186,
+        94
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 5,
+      "footprint_source": "center_fallback",
+      "description": "the painting second closest to the statue",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "nearest",
+        "anchor": {
+          "category": "statue"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        80
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 81,
+      "category": "painting",
+      "name": "Painting|9|7",
+      "attributes": [
+        "procthor_object_id=Painting|9|7",
+        "procthor_object_type=Painting",
+        "footprint_source=center_fallback",
+        "num_grid_cells=5",
+        "footprint_area=0.0125"
+      ],
+      "center_grid": [
+        229,
+        249
+      ],
+      "metadata_grid_cell": [
+        229,
+        249
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 5,
+      "footprint_source": "center_fallback",
+      "description": "the painting closest to the pencil",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "nearest",
+        "anchor": {
+          "category": "pencil"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        81
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 82,
+      "category": "painting",
+      "name": "Painting|6|7",
+      "attributes": [
+        "procthor_object_id=Painting|6|7",
+        "procthor_object_type=Painting",
+        "footprint_source=center_fallback",
+        "num_grid_cells=5",
+        "footprint_area=0.0125"
+      ],
+      "center_grid": [
+        247,
+        186
+      ],
+      "metadata_grid_cell": [
+        247,
+        186
+      ],
+      "room_id": 4,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 5,
+      "footprint_source": "center_fallback",
+      "description": "the painting second closest to the alarm clock",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        82
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 83,
+      "category": "painting",
+      "name": "Painting|7|5",
+      "attributes": [
+        "procthor_object_id=Painting|7|5",
+        "procthor_object_type=Painting",
+        "footprint_source=bbox",
+        "num_grid_cells=17",
+        "footprint_area=0.04250000000000001"
+      ],
+      "center_grid": [
+        245,
+        144
+      ],
+      "metadata_grid_cell": [
+        245,
+        143
+      ],
+      "room_id": 4,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 17,
+      "footprint_source": "bbox",
+      "description": "the painting closest to the watch",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "nearest",
+        "anchor": {
+          "category": "watch"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        83
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 84,
+      "category": "painting",
+      "name": "Painting|7|6",
+      "attributes": [
+        "procthor_object_id=Painting|7|6",
+        "procthor_object_type=Painting",
+        "footprint_source=bbox",
+        "num_grid_cells=18",
+        "footprint_area=0.045000000000000005"
+      ],
+      "center_grid": [
+        357,
+        140
+      ],
+      "metadata_grid_cell": [
+        357,
+        141
+      ],
+      "room_id": 4,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 18,
+      "footprint_source": "bbox",
+      "description": "the painting second farthest from the cup",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "farthest",
+        "anchor": {
+          "category": "cup"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        84
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 85,
+      "category": "painting",
+      "name": "Painting|7|7",
+      "attributes": [
+        "procthor_object_id=Painting|7|7",
+        "procthor_object_type=Painting",
+        "footprint_source=bbox",
+        "num_grid_cells=16",
+        "footprint_area=0.04000000000000001"
+      ],
+      "center_grid": [
+        357,
+        162
+      ],
+      "metadata_grid_cell": [
+        357,
+        165
+      ],
+      "room_id": 4,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 16,
+      "footprint_source": "bbox",
+      "description": "the painting second closest to the dog bed",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "nearest",
+        "anchor": {
+          "category": "dog_bed"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        85
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 86,
+      "category": "painting",
+      "name": "Painting|8|5",
+      "attributes": [
+        "procthor_object_id=Painting|8|5",
+        "procthor_object_type=Painting",
+        "footprint_source=bbox",
+        "num_grid_cells=19",
+        "footprint_area=0.04750000000000001"
+      ],
+      "center_grid": [
+        77,
+        144
+      ],
+      "metadata_grid_cell": [
+        77,
+        144
+      ],
+      "room_id": 5,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 19,
+      "footprint_source": "bbox",
+      "description": "the painting closest to the counter top",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "nearest",
+        "anchor": {
+          "category": "counter_top"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        86
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 87,
+      "category": "painting",
+      "name": "Painting|8|6",
+      "attributes": [
+        "procthor_object_id=Painting|8|6",
+        "procthor_object_type=Painting",
+        "footprint_source=center_fallback",
+        "num_grid_cells=5",
+        "footprint_area=0.0125"
+      ],
+      "center_grid": [
+        15,
+        248
+      ],
+      "metadata_grid_cell": [
+        15,
+        248
+      ],
+      "room_id": 5,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 5,
+      "footprint_source": "center_fallback",
+      "description": "the painting farthest from the alarm clock",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        87
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 88,
+      "category": "painting",
+      "name": "Painting|9|5",
+      "attributes": [
+        "procthor_object_id=Painting|9|5",
+        "procthor_object_type=Painting",
+        "footprint_source=center_fallback",
+        "num_grid_cells=5",
+        "footprint_area=0.0125"
+      ],
+      "center_grid": [
+        229,
+        222
+      ],
+      "metadata_grid_cell": [
+        229,
+        222
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 5,
+      "footprint_source": "center_fallback",
+      "description": "the painting closest to the alarm clock",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        88
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 89,
+      "category": "painting",
+      "name": "Painting|4|7",
+      "attributes": [
+        "procthor_object_id=Painting|4|7",
+        "procthor_object_type=Painting",
+        "footprint_source=center_fallback",
+        "num_grid_cells=5",
+        "footprint_area=0.0125"
+      ],
+      "center_grid": [
+        186,
+        62
+      ],
+      "metadata_grid_cell": [
+        186,
+        62
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 5,
+      "footprint_source": "center_fallback",
+      "description": "the painting second closest to the tv stand",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "nearest",
+        "anchor": {
+          "category": "tv_stand"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        89
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 90,
+      "category": "pan",
+      "name": "Pan|surface|8|30",
+      "attributes": [
+        "procthor_object_id=Pan|surface|8|30",
+        "procthor_object_type=Pan",
+        "footprint_source=bbox",
+        "num_grid_cells=40",
+        "footprint_area=0.1"
+      ],
+      "center_grid": [
+        25,
+        174
+      ],
+      "metadata_grid_cell": [
+        25,
+        174
+      ],
+      "room_id": 5,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 40,
+      "footprint_source": "bbox",
+      "description": "the pan",
+      "description_constraints": {
+        "category": "pan"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        90
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 91,
+      "category": "paper_towel_roll",
+      "name": "PaperTowelRoll|surface|8|20",
+      "attributes": [
+        "procthor_object_id=PaperTowelRoll|surface|8|20",
+        "procthor_object_type=PaperTowelRoll",
+        "footprint_source=bbox",
+        "num_grid_cells=2",
+        "footprint_area=0.005000000000000001"
+      ],
+      "center_grid": [
+        26,
+        168
+      ],
+      "metadata_grid_cell": [
+        26,
+        168
+      ],
+      "room_id": 5,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 2,
+      "footprint_source": "bbox",
+      "description": "the paper towel roll",
+      "description_constraints": {
+        "category": "paper_towel_roll"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        91
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 92,
+      "category": "pen",
+      "name": "Pen|surface|4|4",
+      "attributes": [
+        "procthor_object_id=Pen|surface|4|4",
+        "procthor_object_type=Pen",
+        "footprint_source=center_fallback",
+        "num_grid_cells=5",
+        "footprint_area=0.0125"
+      ],
+      "center_grid": [
+        345,
+        66
+      ],
+      "metadata_grid_cell": [
+        345,
+        66
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 5,
+      "footprint_source": "center_fallback",
+      "description": "the pen",
+      "description_constraints": {
+        "category": "pen"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        92
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 93,
+      "category": "pencil",
+      "name": "Pencil|surface|6|15",
+      "attributes": [
+        "procthor_object_id=Pencil|surface|6|15",
+        "procthor_object_type=Pencil",
+        "footprint_source=bbox",
+        "num_grid_cells=2",
+        "footprint_area=0.005000000000000001"
+      ],
+      "center_grid": [
+        296,
+        272
+      ],
+      "metadata_grid_cell": [
+        296,
+        272
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 2,
+      "footprint_source": "bbox",
+      "description": "the pencil",
+      "description_constraints": {
+        "category": "pencil"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        93
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 94,
+      "category": "pillow",
+      "name": "Pillow|4|2|1",
+      "attributes": [
+        "procthor_object_id=Pillow|4|2|1",
+        "procthor_object_type=Pillow",
+        "footprint_source=bbox",
+        "num_grid_cells=66",
+        "footprint_area=0.16500000000000004"
+      ],
+      "center_grid": [
+        193,
+        73
+      ],
+      "metadata_grid_cell": [
+        193,
+        73
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 66,
+      "footprint_source": "bbox",
+      "description": "the pillow closest to the alarm clock",
+      "description_constraints": {
+        "category": "pillow",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        94
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 95,
+      "category": "pillow",
+      "name": "Pillow|6|1|1",
+      "attributes": [
+        "procthor_object_id=Pillow|6|1|1",
+        "procthor_object_type=Pillow",
+        "footprint_source=bbox",
+        "num_grid_cells=72",
+        "footprint_area=0.18000000000000002"
+      ],
+      "center_grid": [
+        339,
+        305
+      ],
+      "metadata_grid_cell": [
+        339,
+        305
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 72,
+      "footprint_source": "bbox",
+      "description": "the pillow second closest to the alarm clock",
+      "description_constraints": {
+        "category": "pillow",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        95
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 96,
+      "category": "pillow",
+      "name": "Pillow|6|1|2",
+      "attributes": [
+        "procthor_object_id=Pillow|6|1|2",
+        "procthor_object_type=Pillow",
+        "footprint_source=bbox",
+        "num_grid_cells=64",
+        "footprint_area=0.16000000000000003"
+      ],
+      "center_grid": [
+        350,
+        305
+      ],
+      "metadata_grid_cell": [
+        350,
+        305
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 64,
+      "footprint_source": "bbox",
+      "description": "the pillow farthest from the alarm clock",
+      "description_constraints": {
+        "category": "pillow",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        96
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 97,
+      "category": "plunger",
+      "name": "Plunger|7|3",
+      "attributes": [
+        "procthor_object_id=Plunger|7|3",
+        "procthor_object_type=Plunger",
+        "footprint_source=bbox",
+        "num_grid_cells=9",
+        "footprint_area=0.022500000000000003"
+      ],
+      "center_grid": [
+        355,
+        103
+      ],
+      "metadata_grid_cell": [
+        355,
+        103
+      ],
+      "room_id": 4,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 9,
+      "footprint_source": "bbox",
+      "description": "the plunger",
+      "description_constraints": {
+        "category": "plunger"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        97
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 98,
+      "category": "remote_control",
+      "name": "RemoteControl|surface|9|38",
+      "attributes": [
+        "procthor_object_id=RemoteControl|surface|9|38",
+        "procthor_object_type=RemoteControl",
+        "footprint_source=bbox",
+        "num_grid_cells=5",
+        "footprint_area=0.0125"
+      ],
+      "center_grid": [
+        218,
+        223
+      ],
+      "metadata_grid_cell": [
+        218,
+        223
+      ],
+      "room_id": 6,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 5,
+      "footprint_source": "bbox",
+      "description": "the remote control farthest from the alarm clock",
+      "description_constraints": {
+        "category": "remote_control",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        98
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 99,
+      "category": "remote_control",
+      "name": "RemoteControl|surface|9|36",
+      "attributes": [
+        "procthor_object_id=RemoteControl|surface|9|36",
+        "procthor_object_type=RemoteControl",
+        "footprint_source=bbox",
+        "num_grid_cells=4",
+        "footprint_area=0.010000000000000002"
+      ],
+      "center_grid": [
+        218,
+        201
+      ],
+      "metadata_grid_cell": [
+        218,
+        201
+      ],
+      "room_id": 6,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 4,
+      "footprint_source": "bbox",
+      "description": "the remote control closest to the alarm clock",
+      "description_constraints": {
+        "category": "remote_control",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        99
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 100,
+      "category": "remote_control",
+      "name": "RemoteControl|surface|9|37",
+      "attributes": [
+        "procthor_object_id=RemoteControl|surface|9|37",
+        "procthor_object_type=RemoteControl",
+        "footprint_source=bbox",
+        "num_grid_cells=8",
+        "footprint_area=0.020000000000000004"
+      ],
+      "center_grid": [
+        215,
+        215
+      ],
+      "metadata_grid_cell": [
+        215,
+        215
+      ],
+      "room_id": 6,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 8,
+      "footprint_source": "bbox",
+      "description": "the remote control second closest to the alarm clock",
+      "description_constraints": {
+        "category": "remote_control",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        100
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 101,
+      "category": "salt_shaker",
+      "name": "SaltShaker|surface|8|29",
+      "attributes": [
+        "procthor_object_id=SaltShaker|surface|8|29",
+        "procthor_object_type=SaltShaker",
+        "footprint_source=bbox",
+        "num_grid_cells=2",
+        "footprint_area=0.005000000000000001"
+      ],
+      "center_grid": [
+        43,
+        148
+      ],
+      "metadata_grid_cell": [
+        43,
+        148
+      ],
+      "room_id": 5,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 2,
+      "footprint_source": "bbox",
+      "description": "the salt shaker",
+      "description_constraints": {
+        "category": "salt_shaker"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        101
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 102,
+      "category": "shelf",
+      "name": "Shelf",
+      "attributes": [
+        "procthor_object_id=ShelvingUnit|9|3___0",
+        "procthor_object_type=Shelf",
+        "footprint_source=bbox",
+        "num_grid_cells=39",
+        "footprint_area=0.09750000000000002"
+      ],
+      "center_grid": [
+        177,
+        145
+      ],
+      "metadata_grid_cell": [
+        177,
+        145
+      ],
+      "room_id": 6,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 39,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 103,
+      "category": "shelf",
+      "name": "Shelf (2)",
+      "attributes": [
+        "procthor_object_id=ShelvingUnit|9|3___1",
+        "procthor_object_type=Shelf",
+        "footprint_source=bbox",
+        "num_grid_cells=10",
+        "footprint_area=0.025"
+      ],
+      "center_grid": [
+        177,
+        146
+      ],
+      "metadata_grid_cell": [
+        177,
+        146
+      ],
+      "room_id": 6,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 10,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 104,
+      "category": "shelf",
+      "name": "Shelf (1)",
+      "attributes": [
+        "procthor_object_id=ShelvingUnit|9|3___6",
+        "procthor_object_type=Shelf",
+        "footprint_source=bbox",
+        "num_grid_cells=8",
+        "footprint_area=0.020000000000000004"
+      ],
+      "center_grid": [
+        172,
+        146
+      ],
+      "metadata_grid_cell": [
+        172,
+        146
+      ],
+      "room_id": 6,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 8,
+      "footprint_source": "bbox",
+      "description": "the shelf farthest from the alarm clock",
+      "description_constraints": {
+        "category": "shelf",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        104
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 105,
+      "category": "shelf",
+      "name": "Shelf (5)",
+      "attributes": [
+        "procthor_object_id=ShelvingUnit|9|3___4",
+        "procthor_object_type=Shelf",
+        "footprint_source=bbox",
+        "num_grid_cells=18",
+        "footprint_area=0.045000000000000005"
+      ],
+      "center_grid": [
+        175,
+        146
+      ],
+      "metadata_grid_cell": [
+        175,
+        146
+      ],
+      "room_id": 6,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 18,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 106,
+      "category": "shelf",
+      "name": "Shelf (6)",
+      "attributes": [
+        "procthor_object_id=ShelvingUnit|9|3___5",
+        "procthor_object_type=Shelf",
+        "footprint_source=bbox",
+        "num_grid_cells=8",
+        "footprint_area=0.020000000000000004"
+      ],
+      "center_grid": [
+        182,
+        146
+      ],
+      "metadata_grid_cell": [
+        182,
+        146
+      ],
+      "room_id": 6,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 8,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 107,
+      "category": "shelf",
+      "name": "Shelf (4)",
+      "attributes": [
+        "procthor_object_id=ShelvingUnit|9|3___2",
+        "procthor_object_type=Shelf",
+        "footprint_source=bbox",
+        "num_grid_cells=8",
+        "footprint_area=0.020000000000000004"
+      ],
+      "center_grid": [
+        182,
+        146
+      ],
+      "metadata_grid_cell": [
+        182,
+        146
+      ],
+      "room_id": 6,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 8,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 108,
+      "category": "shelf",
+      "name": "Shelf (3)",
+      "attributes": [
+        "procthor_object_id=ShelvingUnit|9|3___3",
+        "procthor_object_type=Shelf",
+        "footprint_source=bbox",
+        "num_grid_cells=18",
+        "footprint_area=0.045000000000000005"
+      ],
+      "center_grid": [
+        175,
+        146
+      ],
+      "metadata_grid_cell": [
+        175,
+        146
+      ],
+      "room_id": 6,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 18,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 109,
+      "category": "shelf",
+      "name": "ShelvingUnit|9|3",
+      "attributes": [
+        "procthor_object_id=ShelvingUnit|9|3",
+        "procthor_object_type=Shelf",
+        "footprint_source=bbox",
+        "num_grid_cells=39",
+        "footprint_area=0.09750000000000002"
+      ],
+      "center_grid": [
+        177,
+        145
+      ],
+      "metadata_grid_cell": [
+        177,
+        145
+      ],
+      "room_id": 6,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 39,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 110,
+      "category": "side_table",
+      "name": "SideTable|6|5",
+      "attributes": [
+        "procthor_object_id=SideTable|6|5",
+        "procthor_object_type=SideTable",
+        "footprint_source=bbox",
+        "num_grid_cells=169",
+        "footprint_area=0.4225000000000001"
+      ],
+      "center_grid": [
+        350,
+        228
+      ],
+      "metadata_grid_cell": [
+        350,
+        228
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 169,
+      "footprint_source": "bbox",
+      "description": "the side table second closest to the alarm clock",
+      "description_constraints": {
+        "category": "side_table",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 2,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        110
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 111,
+      "category": "side_table",
+      "name": "SideTable|7|4",
+      "attributes": [
+        "procthor_object_id=SideTable|7|4",
+        "procthor_object_type=SideTable",
+        "footprint_source=bbox",
+        "num_grid_cells=25",
+        "footprint_area=0.0625"
+      ],
+      "center_grid": [
+        348,
+        104
+      ],
+      "metadata_grid_cell": [
+        348,
+        104
+      ],
+      "room_id": 4,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 25,
+      "footprint_source": "bbox",
+      "description": "the side table in the smallest room",
+      "description_constraints": {
+        "category": "side_table",
+        "room_rank": "smallest"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        111
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 112,
+      "category": "side_table",
+      "name": "SideTable|6|4",
+      "attributes": [
+        "procthor_object_id=SideTable|6|4",
+        "procthor_object_type=SideTable",
+        "footprint_source=bbox",
+        "num_grid_cells=91",
+        "footprint_area=0.2275"
+      ],
+      "center_grid": [
+        233,
+        209
+      ],
+      "metadata_grid_cell": [
+        233,
+        209
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 91,
+      "footprint_source": "bbox",
+      "description": "the side table closest to the alarm clock",
+      "description_constraints": {
+        "category": "side_table",
+        "relation": "nearest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        112
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 113,
+      "category": "sink",
+      "name": "Sink|7|1|0",
+      "attributes": [
+        "procthor_object_id=Sink|7|1|0",
+        "procthor_object_type=Sink",
+        "footprint_source=bbox",
+        "num_grid_cells=196",
+        "footprint_area=0.49000000000000005"
+      ],
+      "center_grid": [
+        304,
+        178
+      ],
+      "metadata_grid_cell": [
+        304,
+        179
+      ],
+      "room_id": 4,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 196,
+      "footprint_source": "bbox",
+      "description": "the sink in the smallest room",
+      "description_constraints": {
+        "category": "sink",
+        "room_rank": "smallest"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        113
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 114,
+      "category": "sink",
+      "name": "Sink|5|1|0",
+      "attributes": [
+        "procthor_object_id=Sink|5|1|0",
+        "procthor_object_type=Sink",
+        "footprint_source=bbox",
+        "num_grid_cells=204",
+        "footprint_area=0.5100000000000001"
+      ],
+      "center_grid": [
+        140,
+        136
+      ],
+      "metadata_grid_cell": [
+        140,
+        137
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 204,
+      "footprint_source": "bbox",
+      "description": "the sink farthest from the alarm clock",
+      "description_constraints": {
+        "category": "sink",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        114
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 115,
+      "category": "sink_basin",
+      "name": "SinkBasin",
+      "attributes": [
+        "procthor_object_id=Sink|7|1|0___0",
+        "procthor_object_type=SinkBasin",
+        "footprint_source=bbox",
+        "num_grid_cells=42",
+        "footprint_area=0.10500000000000001"
+      ],
+      "center_grid": [
+        304,
+        178
+      ],
+      "metadata_grid_cell": [
+        304,
+        178
+      ],
+      "room_id": 4,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 42,
+      "footprint_source": "bbox",
+      "description": "the sink basin in the smallest room",
+      "description_constraints": {
+        "category": "sink_basin",
+        "room_rank": "smallest"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        115
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 116,
+      "category": "sink_basin",
+      "name": "SinkBasin",
+      "attributes": [
+        "procthor_object_id=Sink|5|1|0___0",
+        "procthor_object_type=SinkBasin",
+        "footprint_source=bbox",
+        "num_grid_cells=105",
+        "footprint_area=0.2625"
+      ],
+      "center_grid": [
+        140,
+        136
+      ],
+      "metadata_grid_cell": [
+        140,
+        136
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 105,
+      "footprint_source": "bbox",
+      "description": "the sink basin farthest from the alarm clock",
+      "description_constraints": {
+        "category": "sink_basin",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        116
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 117,
+      "category": "soap_bottle",
+      "name": "SoapBottle|surface|8|23",
+      "attributes": [
+        "procthor_object_id=SoapBottle|surface|8|23",
+        "procthor_object_type=SoapBottle",
+        "footprint_source=bbox",
+        "num_grid_cells=6",
+        "footprint_area=0.015000000000000003"
+      ],
+      "center_grid": [
+        43,
+        147
+      ],
+      "metadata_grid_cell": [
+        43,
+        147
+      ],
+      "room_id": 5,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 6,
+      "footprint_source": "bbox",
+      "description": "the soap bottle",
+      "description_constraints": {
+        "category": "soap_bottle"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        117
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 118,
+      "category": "sofa",
+      "name": "Sofa|9|1",
+      "attributes": [
+        "procthor_object_id=Sofa|9|1",
+        "procthor_object_type=Sofa",
+        "footprint_source=bbox",
+        "num_grid_cells=738",
+        "footprint_area=1.845"
+      ],
+      "center_grid": [
+        220,
+        212
+      ],
+      "metadata_grid_cell": [
+        219,
+        212
+      ],
+      "room_id": 6,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 738,
+      "footprint_source": "bbox",
+      "description": "the sofa",
+      "description_constraints": {
+        "category": "sofa"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        118
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 119,
+      "category": "spray_bottle",
+      "name": "SprayBottle|surface|5|8",
+      "attributes": [
+        "procthor_object_id=SprayBottle|surface|5|8",
+        "procthor_object_type=SprayBottle",
+        "footprint_source=bbox",
+        "num_grid_cells=2",
+        "footprint_area=0.005000000000000001"
+      ],
+      "center_grid": [
+        103,
+        18
+      ],
+      "metadata_grid_cell": [
+        103,
+        18
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 2,
+      "footprint_source": "bbox",
+      "description": "the spray bottle farthest from the alarm clock",
+      "description_constraints": {
+        "category": "spray_bottle",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        119
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 120,
+      "category": "spray_bottle",
+      "name": "SprayBottle|surface|7|18",
+      "attributes": [
+        "procthor_object_id=SprayBottle|surface|7|18",
+        "procthor_object_type=SprayBottle",
+        "footprint_source=bbox",
+        "num_grid_cells=3",
+        "footprint_area=0.0075000000000000015"
+      ],
+      "center_grid": [
+        348,
+        103
+      ],
+      "metadata_grid_cell": [
+        348,
+        103
+      ],
+      "room_id": 4,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 3,
+      "footprint_source": "bbox",
+      "description": "the spray bottle in the smallest room",
+      "description_constraints": {
+        "category": "spray_bottle",
+        "room_rank": "smallest"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        120
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 121,
+      "category": "spray_bottle",
+      "name": "SprayBottle|surface|8|21",
+      "attributes": [
+        "procthor_object_id=SprayBottle|surface|8|21",
+        "procthor_object_type=SprayBottle",
+        "footprint_source=bbox",
+        "num_grid_cells=2",
+        "footprint_area=0.005000000000000001"
+      ],
+      "center_grid": [
+        43,
+        205
+      ],
+      "metadata_grid_cell": [
+        43,
+        205
+      ],
+      "room_id": 5,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 2,
+      "footprint_source": "bbox",
+      "description": "the spray bottle in the kitchen",
+      "description_constraints": {
+        "category": "spray_bottle",
+        "room_category": "kitchen"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        121
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 122,
+      "category": "statue",
+      "name": "Statue|surface|9|33",
+      "attributes": [
+        "procthor_object_id=Statue|surface|9|33",
+        "procthor_object_type=Statue",
+        "footprint_source=bbox",
+        "num_grid_cells=9",
+        "footprint_area=0.022500000000000003"
+      ],
+      "center_grid": [
+        175,
+        145
+      ],
+      "metadata_grid_cell": [
+        175,
+        145
+      ],
+      "room_id": 6,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 9,
+      "footprint_source": "bbox",
+      "description": "the statue",
+      "description_constraints": {
+        "category": "statue"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        122
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 123,
+      "category": "teddy_bear",
+      "name": "TeddyBear|surface|4|3",
+      "attributes": [
+        "procthor_object_id=TeddyBear|surface|4|3",
+        "procthor_object_type=TeddyBear",
+        "footprint_source=bbox",
+        "num_grid_cells=79",
+        "footprint_area=0.1975"
+      ],
+      "center_grid": [
+        352,
+        36
+      ],
+      "metadata_grid_cell": [
+        352,
+        36
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 79,
+      "footprint_source": "bbox",
+      "description": "the teddy bear",
+      "description_constraints": {
+        "category": "teddy_bear"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        123
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 124,
+      "category": "television",
+      "name": "Television|4|3|1",
+      "attributes": [
+        "procthor_object_id=Television|4|3|1",
+        "procthor_object_type=Television",
+        "footprint_source=bbox",
+        "num_grid_cells=52",
+        "footprint_area=0.13"
+      ],
+      "center_grid": [
+        278,
+        24
+      ],
+      "metadata_grid_cell": [
+        277,
+        24
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 52,
+      "footprint_source": "bbox",
+      "description": "the television farthest from the alarm clock",
+      "description_constraints": {
+        "category": "television",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        124
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 125,
+      "category": "television",
+      "name": "Television|9|4",
+      "attributes": [
+        "procthor_object_id=Television|9|4",
+        "procthor_object_type=Television",
+        "footprint_source=bbox",
+        "num_grid_cells=78",
+        "footprint_area=0.19500000000000003"
+      ],
+      "center_grid": [
+        164,
+        313
+      ],
+      "metadata_grid_cell": [
+        164,
+        314
+      ],
+      "room_id": 6,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 78,
+      "footprint_source": "bbox",
+      "description": "the television in the living room",
+      "description_constraints": {
+        "category": "television",
+        "room_category": "living_room"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        125
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 126,
+      "category": "television",
+      "name": "Television|8|4",
+      "attributes": [
+        "procthor_object_id=Television|8|4",
+        "procthor_object_type=Television",
+        "footprint_source=bbox",
+        "num_grid_cells=22",
+        "footprint_area=0.05500000000000001"
+      ],
+      "center_grid": [
+        126,
+        144
+      ],
+      "metadata_grid_cell": [
+        127,
+        144
+      ],
+      "room_id": 5,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 22,
+      "footprint_source": "bbox",
+      "description": "the television in the kitchen",
+      "description_constraints": {
+        "category": "television",
+        "room_category": "kitchen"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        126
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 127,
+      "category": "toilet",
+      "name": "Toilet|5|0",
+      "attributes": [
+        "procthor_object_id=Toilet|5|0",
+        "procthor_object_type=Toilet",
+        "footprint_source=bbox",
+        "num_grid_cells=209",
+        "footprint_area=0.5225000000000001"
+      ],
+      "center_grid": [
+        111,
+        21
+      ],
+      "metadata_grid_cell": [
+        111,
+        21
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 209,
+      "footprint_source": "bbox",
+      "description": "the toilet farthest from the alarm clock",
+      "description_constraints": {
+        "category": "toilet",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        127
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 128,
+      "category": "toilet",
+      "name": "Toilet|7|0",
+      "attributes": [
+        "procthor_object_id=Toilet|7|0",
+        "procthor_object_type=Toilet",
+        "footprint_source=bbox",
+        "num_grid_cells=506",
+        "footprint_area=1.2650000000000001"
+      ],
+      "center_grid": [
+        351,
+        177
+      ],
+      "metadata_grid_cell": [
+        352,
+        173
+      ],
+      "room_id": 4,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 506,
+      "footprint_source": "bbox",
+      "description": "the toilet in the smallest room",
+      "description_constraints": {
+        "category": "toilet",
+        "room_rank": "smallest"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        128
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 129,
+      "category": "toilet_paper",
+      "name": "ToiletPaper|surface|5|9",
+      "attributes": [
+        "procthor_object_id=ToiletPaper|surface|5|9",
+        "procthor_object_type=ToiletPaper",
+        "footprint_source=bbox",
+        "num_grid_cells=4",
+        "footprint_area=0.010000000000000002"
+      ],
+      "center_grid": [
+        104,
+        25
+      ],
+      "metadata_grid_cell": [
+        104,
+        25
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 4,
+      "footprint_source": "bbox",
+      "description": "the toilet paper farthest from the alarm clock",
+      "description_constraints": {
+        "category": "toilet_paper",
+        "relation": "farthest",
+        "anchor": {
+          "category": "alarm_clock"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        129
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 130,
+      "category": "toilet_paper",
+      "name": "ToiletPaper|surface|7|19",
+      "attributes": [
+        "procthor_object_id=ToiletPaper|surface|7|19",
+        "procthor_object_type=ToiletPaper",
+        "footprint_source=center_fallback",
+        "num_grid_cells=5",
+        "footprint_area=0.0125"
+      ],
+      "center_grid": [
+        348,
+        183
+      ],
+      "metadata_grid_cell": [
+        348,
+        183
+      ],
+      "room_id": 4,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 5,
+      "footprint_source": "center_fallback",
+      "description": "the toilet paper in the smallest room",
+      "description_constraints": {
+        "category": "toilet_paper",
+        "room_rank": "smallest"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        130
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 131,
+      "category": "tomato",
+      "name": "Tomato|surface|8|27",
+      "attributes": [
+        "procthor_object_id=Tomato|surface|8|27",
+        "procthor_object_type=Tomato",
+        "footprint_source=bbox",
+        "num_grid_cells=12",
+        "footprint_area=0.030000000000000006"
+      ],
+      "center_grid": [
+        103,
+        151
+      ],
+      "metadata_grid_cell": [
+        103,
+        151
+      ],
+      "room_id": 5,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 12,
+      "footprint_source": "bbox",
+      "description": "the tomato",
+      "description_constraints": {
+        "category": "tomato"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        131
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 132,
+      "category": "tv_stand",
+      "name": "TVStand|4|3|0",
+      "attributes": [
+        "procthor_object_id=TVStand|4|3|0",
+        "procthor_object_type=TVStand",
+        "footprint_source=bbox",
+        "num_grid_cells=432",
+        "footprint_area=1.08"
+      ],
+      "center_grid": [
+        278,
+        24
+      ],
+      "metadata_grid_cell": [
+        277,
+        24
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 432,
+      "footprint_source": "bbox",
+      "description": "the tv stand",
+      "description_constraints": {
+        "category": "tv_stand"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        132
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 133,
+      "category": "vase",
+      "name": "Vase|surface|6|16",
+      "attributes": [
+        "procthor_object_id=Vase|surface|6|16",
+        "procthor_object_type=Vase",
+        "footprint_source=bbox",
+        "num_grid_cells=12",
+        "footprint_area=0.030000000000000006"
+      ],
+      "center_grid": [
+        296,
+        259
+      ],
+      "metadata_grid_cell": [
+        296,
+        259
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 12,
+      "footprint_source": "bbox",
+      "description": "the vase in the same room as the alarm clock",
+      "description_constraints": {
+        "category": "vase",
+        "relation": "same_room",
+        "anchor": {
+          "category": "alarm_clock"
+        }
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        133
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 134,
+      "category": "vase",
+      "name": "Vase|surface|9|39",
+      "attributes": [
+        "procthor_object_id=Vase|surface|9|39",
+        "procthor_object_type=Vase",
+        "footprint_source=bbox",
+        "num_grid_cells=9",
+        "footprint_area=0.022500000000000003"
+      ],
+      "center_grid": [
+        179,
+        145
+      ],
+      "metadata_grid_cell": [
+        179,
+        145
+      ],
+      "room_id": 6,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 9,
+      "footprint_source": "bbox",
+      "description": "the vase in the living room",
+      "description_constraints": {
+        "category": "vase",
+        "room_category": "living_room"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        134
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 135,
+      "category": "wall",
+      "name": "wall|7|4.28|17.12|8.56|17.12",
+      "attributes": [
+        "procthor_object_id=wall|7|4.28|17.12|8.56|17.12",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=176",
+        "footprint_area=0.44000000000000006"
+      ],
+      "center_grid": [
+        357,
+        143
+      ],
+      "metadata_grid_cell": [
+        357,
+        143
+      ],
+      "room_id": 4,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 176,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 136,
+      "category": "wall",
+      "name": "wall|7|4.28|12.84|4.28|17.12",
+      "attributes": [
+        "procthor_object_id=wall|7|4.28|12.84|4.28|17.12",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=176",
+        "footprint_area=0.44000000000000006"
+      ],
+      "center_grid": [
+        315,
+        101
+      ],
+      "metadata_grid_cell": [
+        315,
+        101
+      ],
+      "room_id": 4,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 176,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 137,
+      "category": "wall",
+      "name": "wall|6|8.56|10.70|14.98|10.70",
+      "attributes": [
+        "procthor_object_id=wall|6|8.56|10.70|14.98|10.70",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=386",
+        "footprint_area=0.9650000000000001"
+      ],
+      "center_grid": [
+        229,
+        250
+      ],
+      "metadata_grid_cell": [
+        229,
+        250
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 386,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 138,
+      "category": "wall",
+      "name": "wall|6|14.98|10.70|14.98|17.12",
+      "attributes": [
+        "procthor_object_id=wall|6|14.98|10.70|14.98|17.12",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=260",
+        "footprint_area=0.65"
+      ],
+      "center_grid": [
+        293,
+        315
+      ],
+      "metadata_grid_cell": [
+        293,
+        315
+      ],
+      "assignment_method": "footprint_cells",
+      "num_grid_cells": 260,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 139,
+      "category": "wall",
+      "name": "wall|6|8.56|17.12|14.98|17.12",
+      "attributes": [
+        "procthor_object_id=wall|6|8.56|17.12|14.98|17.12",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=260",
+        "footprint_area=0.65"
+      ],
+      "center_grid": [
+        357,
+        250
+      ],
+      "metadata_grid_cell": [
+        357,
+        250
+      ],
+      "room_id": 3,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 260,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 140,
+      "category": "wall",
+      "name": "wall|6|8.56|10.70|8.56|17.12",
+      "attributes": [
+        "procthor_object_id=wall|6|8.56|10.70|8.56|17.12",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=260",
+        "footprint_area=0.65"
+      ],
+      "center_grid": [
+        293,
+        186
+      ],
+      "metadata_grid_cell": [
+        293,
+        186
+      ],
+      "room_id": 4,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 260,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 141,
+      "category": "wall",
+      "name": "wall|5|0.00|4.28|6.42|4.28",
+      "attributes": [
+        "procthor_object_id=wall|5|0.00|4.28|6.42|4.28",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=260",
+        "footprint_area=0.65"
+      ],
+      "center_grid": [
+        101,
+        79
+      ],
+      "metadata_grid_cell": [
+        101,
+        79
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 260,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 142,
+      "category": "wall",
+      "name": "wall|5|6.42|4.28|6.42|6.42",
+      "attributes": [
+        "procthor_object_id=wall|5|6.42|4.28|6.42|6.42",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=90",
+        "footprint_area=0.225"
+      ],
+      "center_grid": [
+        122,
+        143
+      ],
+      "metadata_grid_cell": [
+        122,
+        143
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 90,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 143,
+      "category": "wall",
+      "name": "wall|5|6.42|6.42|6.42|8.56",
+      "attributes": [
+        "procthor_object_id=wall|5|6.42|6.42|6.42|8.56",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=90",
+        "footprint_area=0.225"
+      ],
+      "center_grid": [
+        165,
+        143
+      ],
+      "metadata_grid_cell": [
+        165,
+        143
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 90,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 144,
+      "category": "wall",
+      "name": "wall|5|0.00|8.56|6.42|8.56",
+      "attributes": [
+        "procthor_object_id=wall|5|0.00|8.56|6.42|8.56",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=260",
+        "footprint_area=0.65"
+      ],
+      "center_grid": [
+        186,
+        79
+      ],
+      "metadata_grid_cell": [
+        186,
+        79
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 260,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 145,
+      "category": "wall",
+      "name": "wall|5|0.00|4.28|0.00|8.56",
+      "attributes": [
+        "procthor_object_id=wall|5|0.00|4.28|0.00|8.56",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=260",
+        "footprint_area=0.65"
+      ],
+      "center_grid": [
+        143,
+        15
+      ],
+      "metadata_grid_cell": [
+        143,
+        15
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 260,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 146,
+      "category": "wall",
+      "name": "wall|4|0.00|8.56|0.00|17.12",
+      "attributes": [
+        "procthor_object_id=wall|4|0.00|8.56|0.00|17.12",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=515",
+        "footprint_area=1.2875"
+      ],
+      "center_grid": [
+        268,
+        15
+      ],
+      "metadata_grid_cell": [
+        272,
+        15
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 515,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 147,
+      "category": "wall",
+      "name": "wall|4|0.00|8.56|6.42|8.56",
+      "attributes": [
+        "procthor_object_id=wall|4|0.00|8.56|6.42|8.56",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=260",
+        "footprint_area=0.65"
+      ],
+      "center_grid": [
+        186,
+        92
+      ],
+      "metadata_grid_cell": [
+        186,
+        79
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 260,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 148,
+      "category": "wall",
+      "name": "wall|4|6.42|8.56|6.42|10.70",
+      "attributes": [
+        "procthor_object_id=wall|4|6.42|8.56|6.42|10.70",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=88",
+        "footprint_area=0.22000000000000003"
+      ],
+      "center_grid": [
+        208,
+        143
+      ],
+      "metadata_grid_cell": [
+        208,
+        143
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 88,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 149,
+      "category": "wall",
+      "name": "wall|4|6.42|10.70|6.42|12.84",
+      "attributes": [
+        "procthor_object_id=wall|4|6.42|10.70|6.42|12.84",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=88",
+        "footprint_area=0.22000000000000003"
+      ],
+      "center_grid": [
+        250,
+        143
+      ],
+      "metadata_grid_cell": [
+        250,
+        143
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 88,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 150,
+      "category": "wall",
+      "name": "wall|4|4.28|12.84|6.42|12.84",
+      "attributes": [
+        "procthor_object_id=wall|4|4.28|12.84|6.42|12.84",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=90",
+        "footprint_area=0.225"
+      ],
+      "center_grid": [
+        272,
+        122
+      ],
+      "metadata_grid_cell": [
+        272,
+        122
+      ],
+      "room_id": 4,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 90,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 151,
+      "category": "wall",
+      "name": "wall|4|4.28|12.84|4.28|17.12",
+      "attributes": [
+        "procthor_object_id=wall|4|4.28|12.84|4.28|17.12",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=176",
+        "footprint_area=0.44000000000000006"
+      ],
+      "center_grid": [
+        310,
+        101
+      ],
+      "metadata_grid_cell": [
+        315,
+        101
+      ],
+      "room_id": 4,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 176,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 152,
+      "category": "wall",
+      "name": "wall|4|0.00|17.12|4.28|17.12",
+      "attributes": [
+        "procthor_object_id=wall|4|0.00|17.12|4.28|17.12",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=174",
+        "footprint_area=0.43500000000000005"
+      ],
+      "center_grid": [
+        358,
+        57
+      ],
+      "metadata_grid_cell": [
+        357,
+        58
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 174,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 153,
+      "category": "wall",
+      "name": "wall|7|8.56|10.70|8.56|17.12",
+      "attributes": [
+        "procthor_object_id=wall|7|8.56|10.70|8.56|17.12",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=260",
+        "footprint_area=0.65"
+      ],
+      "center_grid": [
+        290,
+        187
+      ],
+      "metadata_grid_cell": [
+        293,
+        186
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 260,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 154,
+      "category": "wall",
+      "name": "wall|7|6.42|10.70|8.56|10.70",
+      "attributes": [
+        "procthor_object_id=wall|7|6.42|10.70|8.56|10.70",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=131",
+        "footprint_area=0.32750000000000007"
+      ],
+      "center_grid": [
+        229,
+        165
+      ],
+      "metadata_grid_cell": [
+        229,
+        165
+      ],
+      "room_id": 4,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 131,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 155,
+      "category": "wall",
+      "name": "wall|exterior|4.28|17.12|8.56|17.12",
+      "attributes": [
+        "procthor_object_id=wall|exterior|4.28|17.12|8.56|17.12",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=176",
+        "footprint_area=0.44000000000000006"
+      ],
+      "center_grid": [
+        358,
+        129
+      ],
+      "metadata_grid_cell": [
+        357,
+        143
+      ],
+      "room_id": 4,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 176,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 156,
+      "category": "wall",
+      "name": "wall|7|4.28|12.84|6.42|12.84",
+      "attributes": [
+        "procthor_object_id=wall|7|4.28|12.84|6.42|12.84",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=90",
+        "footprint_area=0.225"
+      ],
+      "center_grid": [
+        272,
+        123
+      ],
+      "metadata_grid_cell": [
+        272,
+        122
+      ],
+      "room_id": 4,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 90,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 157,
+      "category": "wall",
+      "name": "wall|exterior|14.98|6.42|14.98|10.70",
+      "attributes": [
+        "procthor_object_id=wall|exterior|14.98|6.42|14.98|10.70",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=174",
+        "footprint_area=0.43500000000000005"
+      ],
+      "center_grid": [
+        188,
+        315
+      ],
+      "metadata_grid_cell": [
+        186,
+        315
+      ],
+      "room_id": 6,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 174,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 158,
+      "category": "wall",
+      "name": "wall|exterior|14.98|10.70|14.98|17.12",
+      "attributes": [
+        "procthor_object_id=wall|exterior|14.98|10.70|14.98|17.12",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=260",
+        "footprint_area=0.65"
+      ],
+      "center_grid": [
+        287,
+        315
+      ],
+      "metadata_grid_cell": [
+        293,
+        315
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 260,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 159,
+      "category": "wall",
+      "name": "wall|exterior|8.56|17.12|14.98|17.12",
+      "attributes": [
+        "procthor_object_id=wall|exterior|8.56|17.12|14.98|17.12",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=260",
+        "footprint_area=0.65"
+      ],
+      "center_grid": [
+        358,
+        255
+      ],
+      "metadata_grid_cell": [
+        357,
+        250
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 260,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 160,
+      "category": "wall",
+      "name": "wall|exterior|6.42|0.00|14.98|0.00",
+      "attributes": [
+        "procthor_object_id=wall|exterior|6.42|0.00|14.98|0.00",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=515",
+        "footprint_area=1.2875"
+      ],
+      "center_grid": [
+        15,
+        228
+      ],
+      "metadata_grid_cell": [
+        15,
+        229
+      ],
+      "room_id": 5,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 515,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 161,
+      "category": "wall",
+      "name": "wall|exterior|6.42|0.00|6.42|4.28",
+      "attributes": [
+        "procthor_object_id=wall|exterior|6.42|0.00|6.42|4.28",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=174",
+        "footprint_area=0.43500000000000005"
+      ],
+      "center_grid": [
+        59,
+        143
+      ],
+      "metadata_grid_cell": [
+        58,
+        143
+      ],
+      "room_id": 5,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 174,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 162,
+      "category": "wall",
+      "name": "wall|exterior|14.98|0.00|14.98|6.42",
+      "attributes": [
+        "procthor_object_id=wall|exterior|14.98|0.00|14.98|6.42",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=260",
+        "footprint_area=0.65"
+      ],
+      "center_grid": [
+        79,
+        315
+      ],
+      "metadata_grid_cell": [
+        79,
+        315
+      ],
+      "assignment_method": "footprint_cells",
+      "num_grid_cells": 260,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 163,
+      "category": "wall",
+      "name": "wall|7|6.42|10.70|6.42|12.84",
+      "attributes": [
+        "procthor_object_id=wall|7|6.42|10.70|6.42|12.84",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=88",
+        "footprint_area=0.22000000000000003"
+      ],
+      "center_grid": [
+        252,
+        143
+      ],
+      "metadata_grid_cell": [
+        250,
+        143
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 88,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 164,
+      "category": "wall",
+      "name": "wall|exterior|0.00|17.12|4.28|17.12",
+      "attributes": [
+        "procthor_object_id=wall|exterior|0.00|17.12|4.28|17.12",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=174",
+        "footprint_area=0.43500000000000005"
+      ],
+      "center_grid": [
+        357,
+        58
+      ],
+      "metadata_grid_cell": [
+        357,
+        58
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 174,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 165,
+      "category": "wall",
+      "name": "wall|exterior|0.00|4.28|6.42|4.28",
+      "attributes": [
+        "procthor_object_id=wall|exterior|0.00|4.28|6.42|4.28",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=260",
+        "footprint_area=0.65"
+      ],
+      "center_grid": [
+        100,
+        80
+      ],
+      "metadata_grid_cell": [
+        101,
+        79
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 260,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 166,
+      "category": "wall",
+      "name": "wall|exterior|0.00|8.56|0.00|17.12",
+      "attributes": [
+        "procthor_object_id=wall|exterior|0.00|8.56|0.00|17.12",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=515",
+        "footprint_area=1.2875"
+      ],
+      "center_grid": [
+        272,
+        15
+      ],
+      "metadata_grid_cell": [
+        272,
+        15
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 515,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 167,
+      "category": "wall",
+      "name": "wall|9|14.98|6.42|14.98|10.70",
+      "attributes": [
+        "procthor_object_id=wall|9|14.98|6.42|14.98|10.70",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=174",
+        "footprint_area=0.43500000000000005"
+      ],
+      "center_grid": [
+        186,
+        315
+      ],
+      "metadata_grid_cell": [
+        186,
+        315
+      ],
+      "assignment_method": "footprint_cells",
+      "num_grid_cells": 174,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 168,
+      "category": "wall",
+      "name": "wall|9|8.56|10.70|14.98|10.70",
+      "attributes": [
+        "procthor_object_id=wall|9|8.56|10.70|14.98|10.70",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=386",
+        "footprint_area=0.9650000000000001"
+      ],
+      "center_grid": [
+        229,
+        237
+      ],
+      "metadata_grid_cell": [
+        229,
+        250
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 386,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 169,
+      "category": "wall",
+      "name": "wall|9|6.42|10.70|8.56|10.70",
+      "attributes": [
+        "procthor_object_id=wall|9|6.42|10.70|8.56|10.70",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=131",
+        "footprint_area=0.32750000000000007"
+      ],
+      "center_grid": [
+        229,
+        165
+      ],
+      "metadata_grid_cell": [
+        229,
+        165
+      ],
+      "room_id": 4,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 131,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 170,
+      "category": "wall",
+      "name": "wall|9|6.42|8.56|6.42|10.70",
+      "attributes": [
+        "procthor_object_id=wall|9|6.42|8.56|6.42|10.70",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=88",
+        "footprint_area=0.22000000000000003"
+      ],
+      "center_grid": [
+        216,
+        143
+      ],
+      "metadata_grid_cell": [
+        208,
+        143
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 88,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 171,
+      "category": "wall",
+      "name": "wall|9|6.42|6.42|6.42|8.56",
+      "attributes": [
+        "procthor_object_id=wall|9|6.42|6.42|6.42|8.56",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=90",
+        "footprint_area=0.225"
+      ],
+      "center_grid": [
+        164,
+        144
+      ],
+      "metadata_grid_cell": [
+        165,
+        143
+      ],
+      "room_id": 6,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 90,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 172,
+      "category": "wall",
+      "name": "wall|8|14.98|0.00|14.98|6.42",
+      "attributes": [
+        "procthor_object_id=wall|8|14.98|0.00|14.98|6.42",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=260",
+        "footprint_area=0.65"
+      ],
+      "center_grid": [
+        80,
+        315
+      ],
+      "metadata_grid_cell": [
+        79,
+        315
+      ],
+      "room_id": 5,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 260,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 173,
+      "category": "wall",
+      "name": "wall|8|6.42|4.28|6.42|6.42",
+      "attributes": [
+        "procthor_object_id=wall|8|6.42|4.28|6.42|6.42",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=90",
+        "footprint_area=0.225"
+      ],
+      "center_grid": [
+        124,
+        143
+      ],
+      "metadata_grid_cell": [
+        122,
+        143
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 90,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 174,
+      "category": "wall",
+      "name": "wall|8|6.42|0.00|6.42|4.28",
+      "attributes": [
+        "procthor_object_id=wall|8|6.42|0.00|6.42|4.28",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=174",
+        "footprint_area=0.43500000000000005"
+      ],
+      "center_grid": [
+        58,
+        143
+      ],
+      "metadata_grid_cell": [
+        58,
+        143
+      ],
+      "assignment_method": "footprint_cells",
+      "num_grid_cells": 174,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 175,
+      "category": "wall",
+      "name": "wall|8|6.42|0.00|14.98|0.00",
+      "attributes": [
+        "procthor_object_id=wall|8|6.42|0.00|14.98|0.00",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=515",
+        "footprint_area=1.2875"
+      ],
+      "center_grid": [
+        15,
+        229
+      ],
+      "metadata_grid_cell": [
+        15,
+        229
+      ],
+      "room_id": 5,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 515,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 176,
+      "category": "wall",
+      "name": "wall|exterior|0.00|4.28|0.00|8.56",
+      "attributes": [
+        "procthor_object_id=wall|exterior|0.00|4.28|0.00|8.56",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=260",
+        "footprint_area=0.65"
+      ],
+      "center_grid": [
+        145,
+        15
+      ],
+      "metadata_grid_cell": [
+        143,
+        15
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 260,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 177,
+      "category": "watch",
+      "name": "Watch|surface|4|0",
+      "attributes": [
+        "procthor_object_id=Watch|surface|4|0",
+        "procthor_object_type=Watch",
+        "footprint_source=bbox",
+        "num_grid_cells=1",
+        "footprint_area=0.0025000000000000005"
+      ],
+      "center_grid": [
+        255,
+        93
+      ],
+      "metadata_grid_cell": [
+        255,
+        93
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 1,
+      "footprint_source": "bbox",
+      "description": "the watch",
+      "description_constraints": {
+        "category": "watch"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        177
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 178,
+      "category": "window",
+      "name": "window|4|0",
+      "attributes": [
+        "procthor_object_id=window|4|0",
+        "procthor_object_type=Window",
+        "footprint_source=bbox",
+        "num_grid_cells=24",
+        "footprint_area=0.06000000000000001"
+      ],
+      "center_grid": [
+        242,
+        15
+      ],
+      "metadata_grid_cell": [
+        229,
+        15
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 24,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 179,
+      "category": "window",
+      "name": "window|8|0",
+      "attributes": [
+        "procthor_object_id=window|8|0",
+        "procthor_object_type=Window",
+        "footprint_source=bbox",
+        "num_grid_cells=95",
+        "footprint_area=0.23750000000000002"
+      ],
+      "center_grid": [
+        15,
+        280
+      ],
+      "metadata_grid_cell": [
+        15,
+        290
+      ],
+      "room_id": 5,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 95,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 180,
+      "category": "window",
+      "name": "window|6|0",
+      "attributes": [
+        "procthor_object_id=window|6|0",
+        "procthor_object_type=Window",
+        "footprint_source=bbox",
+        "num_grid_cells=36",
+        "footprint_area=0.09000000000000001"
+      ],
+      "center_grid": [
+        358,
+        252
+      ],
+      "metadata_grid_cell": [
+        357,
+        242
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 36,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 181,
+      "category": "window",
+      "name": "window|6|1",
+      "attributes": [
+        "procthor_object_id=window|6|1",
+        "procthor_object_type=Window",
+        "footprint_source=bbox",
+        "num_grid_cells=68",
+        "footprint_area=0.17000000000000004"
+      ],
+      "center_grid": [
+        276,
+        314
+      ],
+      "metadata_grid_cell": [
+        284,
+        315
+      ],
+      "room_id": 3,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 68,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 182,
+      "category": "window",
+      "name": "window|9|0",
+      "attributes": [
+        "procthor_object_id=window|9|0",
+        "procthor_object_type=Window",
+        "footprint_source=bbox",
+        "num_grid_cells=62",
+        "footprint_area=0.15500000000000003"
+      ],
+      "center_grid": [
+        194,
+        314
+      ],
+      "metadata_grid_cell": [
+        209,
+        315
+      ],
+      "room_id": 6,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 62,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    }
+  ],
+  "status_counts": {
+    "verified": 113,
+    "excluded_structural": 52,
+    "unresolved": 17
+  }
+}

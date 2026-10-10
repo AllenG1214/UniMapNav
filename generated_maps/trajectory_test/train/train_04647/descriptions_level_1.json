@@ -1,0 +1,483 @@
+[
+  {
+    "object_id": 1,
+    "depth": 1,
+    "rule": {
+      "category": "alarm_clock"
+    },
+    "dependencies": [
+      1
+    ],
+    "expressions": [
+      "the alarm clock"
+    ]
+  },
+  {
+    "object_id": 2,
+    "depth": 1,
+    "rule": {
+      "category": "apple"
+    },
+    "dependencies": [
+      2
+    ],
+    "expressions": [
+      "the apple"
+    ]
+  },
+  {
+    "object_id": 3,
+    "depth": 1,
+    "rule": {
+      "category": "arm_chair"
+    },
+    "dependencies": [
+      3
+    ],
+    "expressions": [
+      "the arm chair"
+    ]
+  },
+  {
+    "object_id": 4,
+    "depth": 1,
+    "rule": {
+      "category": "basket_ball"
+    },
+    "dependencies": [
+      4
+    ],
+    "expressions": [
+      "the basket ball"
+    ]
+  },
+  {
+    "object_id": 5,
+    "depth": 1,
+    "rule": {
+      "category": "bed"
+    },
+    "dependencies": [
+      5
+    ],
+    "expressions": [
+      "the bed"
+    ]
+  },
+  {
+    "object_id": 6,
+    "depth": 1,
+    "rule": {
+      "category": "book"
+    },
+    "dependencies": [
+      6
+    ],
+    "expressions": [
+      "the book"
+    ]
+  },
+  {
+    "object_id": 7,
+    "depth": 1,
+    "rule": {
+      "category": "box"
+    },
+    "dependencies": [
+      7
+    ],
+    "expressions": [
+      "the box"
+    ]
+  },
+  {
+    "object_id": 8,
+    "depth": 1,
+    "rule": {
+      "category": "candle"
+    },
+    "dependencies": [
+      8
+    ],
+    "expressions": [
+      "the candle"
+    ]
+  },
+  {
+    "object_id": 9,
+    "depth": 1,
+    "rule": {
+      "category": "cd"
+    },
+    "dependencies": [
+      9
+    ],
+    "expressions": [
+      "the cd"
+    ]
+  },
+  {
+    "object_id": 10,
+    "depth": 1,
+    "rule": {
+      "category": "counter_top"
+    },
+    "dependencies": [
+      10
+    ],
+    "expressions": [
+      "the counter top"
+    ]
+  },
+  {
+    "object_id": 11,
+    "depth": 1,
+    "rule": {
+      "category": "credit_card"
+    },
+    "dependencies": [
+      11
+    ],
+    "expressions": [
+      "the credit card"
+    ]
+  },
+  {
+    "object_id": 12,
+    "depth": 1,
+    "rule": {
+      "category": "desk_lamp"
+    },
+    "dependencies": [
+      12
+    ],
+    "expressions": [
+      "the desk lamp"
+    ]
+  },
+  {
+    "object_id": 13,
+    "depth": 1,
+    "rule": {
+      "category": "dining_table"
+    },
+    "dependencies": [
+      13
+    ],
+    "expressions": [
+      "the dining table"
+    ]
+  },
+  {
+    "object_id": 14,
+    "depth": 1,
+    "rule": {
+      "category": "dish_sponge"
+    },
+    "dependencies": [
+      14
+    ],
+    "expressions": [
+      "the dish sponge"
+    ]
+  },
+  {
+    "object_id": 22,
+    "depth": 1,
+    "rule": {
+      "category": "dresser"
+    },
+    "dependencies": [
+      22
+    ],
+    "expressions": [
+      "the dresser"
+    ]
+  },
+  {
+    "object_id": 25,
+    "depth": 1,
+    "rule": {
+      "category": "faucet"
+    },
+    "dependencies": [
+      25
+    ],
+    "expressions": [
+      "the faucet"
+    ]
+  },
+  {
+    "object_id": 28,
+    "depth": 1,
+    "rule": {
+      "category": "fridge"
+    },
+    "dependencies": [
+      28
+    ],
+    "expressions": [
+      "the fridge"
+    ]
+  },
+  {
+    "object_id": 29,
+    "depth": 1,
+    "rule": {
+      "category": "garbage_bag"
+    },
+    "dependencies": [
+      29
+    ],
+    "expressions": [
+      "the garbage bag"
+    ]
+  },
+  {
+    "object_id": 32,
+    "depth": 1,
+    "rule": {
+      "category": "house_plant"
+    },
+    "dependencies": [
+      32
+    ],
+    "expressions": [
+      "the house plant"
+    ]
+  },
+  {
+    "object_id": 33,
+    "depth": 1,
+    "rule": {
+      "category": "lettuce"
+    },
+    "dependencies": [
+      33
+    ],
+    "expressions": [
+      "the lettuce"
+    ]
+  },
+  {
+    "object_id": 41,
+    "depth": 1,
+    "rule": {
+      "category": "paper_towel_roll"
+    },
+    "dependencies": [
+      41
+    ],
+    "expressions": [
+      "the paper towel roll"
+    ]
+  },
+  {
+    "object_id": 42,
+    "depth": 1,
+    "rule": {
+      "category": "pencil"
+    },
+    "dependencies": [
+      42
+    ],
+    "expressions": [
+      "the pencil"
+    ]
+  },
+  {
+    "object_id": 43,
+    "depth": 1,
+    "rule": {
+      "category": "pillow"
+    },
+    "dependencies": [
+      43
+    ],
+    "expressions": [
+      "the pillow"
+    ]
+  },
+  {
+    "object_id": 44,
+    "depth": 1,
+    "rule": {
+      "category": "plate"
+    },
+    "dependencies": [
+      44
+    ],
+    "expressions": [
+      "the plate"
+    ]
+  },
+  {
+    "object_id": 45,
+    "depth": 1,
+    "rule": {
+      "category": "plunger"
+    },
+    "dependencies": [
+      45
+    ],
+    "expressions": [
+      "the plunger"
+    ]
+  },
+  {
+    "object_id": 46,
+    "depth": 1,
+    "rule": {
+      "category": "remote_control"
+    },
+    "dependencies": [
+      46
+    ],
+    "expressions": [
+      "the remote control"
+    ]
+  },
+  {
+    "object_id": 49,
+    "depth": 1,
+    "rule": {
+      "category": "sink"
+    },
+    "dependencies": [
+      49
+    ],
+    "expressions": [
+      "the sink"
+    ]
+  },
+  {
+    "object_id": 50,
+    "depth": 1,
+    "rule": {
+      "category": "sink_basin"
+    },
+    "dependencies": [
+      50
+    ],
+    "expressions": [
+      "the sink basin"
+    ]
+  },
+  {
+    "object_id": 51,
+    "depth": 1,
+    "rule": {
+      "category": "spoon"
+    },
+    "dependencies": [
+      51
+    ],
+    "expressions": [
+      "the spoon"
+    ]
+  },
+  {
+    "object_id": 52,
+    "depth": 1,
+    "rule": {
+      "category": "statue"
+    },
+    "dependencies": [
+      52
+    ],
+    "expressions": [
+      "the statue"
+    ]
+  },
+  {
+    "object_id": 53,
+    "depth": 1,
+    "rule": {
+      "category": "teddy_bear"
+    },
+    "dependencies": [
+      53
+    ],
+    "expressions": [
+      "the teddy bear"
+    ]
+  },
+  {
+    "object_id": 54,
+    "depth": 1,
+    "rule": {
+      "category": "television"
+    },
+    "dependencies": [
+      54
+    ],
+    "expressions": [
+      "the television"
+    ]
+  },
+  {
+    "object_id": 55,
+    "depth": 1,
+    "rule": {
+      "category": "tennis_racket"
+    },
+    "dependencies": [
+      55
+    ],
+    "expressions": [
+      "the tennis racket"
+    ]
+  },
+  {
+    "object_id": 56,
+    "depth": 1,
+    "rule": {
+      "category": "toilet"
+    },
+    "dependencies": [
+      56
+    ],
+    "expressions": [
+      "the toilet"
+    ]
+  },
+  {
+    "object_id": 57,
+    "depth": 1,
+    "rule": {
+      "category": "tv_stand"
+    },
+    "dependencies": [
+      57
+    ],
+    "expressions": [
+      "the tv stand"
+    ]
+  },
+  {
+    "object_id": 58,
+    "depth": 1,
+    "rule": {
+      "category": "vase"
+    },
+    "dependencies": [
+      58
+    ],
+    "expressions": [
+      "the vase"
+    ]
+  },
+  {
+    "object_id": 87,
+    "depth": 1,
+    "rule": {
+      "category": "wine_bottle"
+    },
+    "dependencies": [
+      87
+    ],
+    "expressions": [
+      "the wine bottle"
+    ]
+  }
+]

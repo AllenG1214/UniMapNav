@@ -1,0 +1,1533 @@
+{
+  "source_map": "C:\\Users\\guoch\\Documents\\ChatGPT\\Universal Navigation\\generated_maps\\trajectory_test\\maps\\train_06131\\train_06131.json",
+  "source_sha256": "ebd80afe338f4006da709e66ecd6ac67d513633414df9ccf5387fa6095b15df3",
+  "objects": [
+    {
+      "id": 1,
+      "category": "baseball_bat",
+      "name": "BaseballBat|2|2",
+      "attributes": [
+        "procthor_object_id=BaseballBat|2|2",
+        "procthor_object_type=BaseballBat",
+        "footprint_source=bbox",
+        "num_grid_cells=2",
+        "footprint_area=0.005000000000000001"
+      ],
+      "center_grid": [
+        88,
+        88
+      ],
+      "metadata_grid_cell": [
+        88,
+        88
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 2,
+      "footprint_source": "bbox",
+      "description": "the baseball bat",
+      "description_constraints": {
+        "category": "baseball_bat"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        1
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 2,
+      "category": "bed",
+      "name": "Bed|2|0",
+      "attributes": [
+        "procthor_object_id=Bed|2|0",
+        "procthor_object_type=Bed",
+        "footprint_source=bbox",
+        "num_grid_cells=812",
+        "footprint_area=2.0300000000000002"
+      ],
+      "center_grid": [
+        91,
+        38
+      ],
+      "metadata_grid_cell": [
+        101,
+        38
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 812,
+      "footprint_source": "bbox",
+      "description": "the bed",
+      "description_constraints": {
+        "category": "bed"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        2
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 3,
+      "category": "cell_phone",
+      "name": "CellPhone|surface|2|3",
+      "attributes": [
+        "procthor_object_id=CellPhone|surface|2|3",
+        "procthor_object_type=CellPhone",
+        "footprint_source=bbox",
+        "num_grid_cells=3",
+        "footprint_area=0.0075000000000000015"
+      ],
+      "center_grid": [
+        27,
+        19
+      ],
+      "metadata_grid_cell": [
+        27,
+        19
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 3,
+      "footprint_source": "bbox",
+      "description": "the cell phone",
+      "description_constraints": {
+        "category": "cell_phone"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        3
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 4,
+      "category": "dish_sponge",
+      "name": "DishSponge|surface|3|6",
+      "attributes": [
+        "procthor_object_id=DishSponge|surface|3|6",
+        "procthor_object_type=DishSponge",
+        "footprint_source=bbox",
+        "num_grid_cells=6",
+        "footprint_area=0.015000000000000003"
+      ],
+      "center_grid": [
+        86,
+        99
+      ],
+      "metadata_grid_cell": [
+        86,
+        99
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 6,
+      "footprint_source": "bbox",
+      "description": "the dish sponge",
+      "description_constraints": {
+        "category": "dish_sponge"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        4
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 5,
+      "category": "doorway",
+      "name": "door|1|3",
+      "attributes": [
+        "procthor_object_id=door|1|3",
+        "procthor_object_type=Doorway",
+        "footprint_source=bbox",
+        "num_grid_cells=84",
+        "footprint_area=0.21000000000000002"
+      ],
+      "center_grid": [
+        76,
+        162
+      ],
+      "metadata_grid_cell": [
+        86,
+        163
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 84,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 6,
+      "category": "doorway",
+      "name": "door|2|3",
+      "attributes": [
+        "procthor_object_id=door|2|3",
+        "procthor_object_type=Doorway",
+        "footprint_source=bbox",
+        "num_grid_cells=420",
+        "footprint_area=1.05"
+      ],
+      "center_grid": [
+        33,
+        80
+      ],
+      "metadata_grid_cell": [
+        23,
+        89
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 420,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 7,
+      "category": "drawer",
+      "name": "Drawer (1)",
+      "attributes": [
+        "procthor_object_id=Dresser|2|1___0",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=52",
+        "footprint_area=0.13"
+      ],
+      "center_grid": [
+        23,
+        19
+      ],
+      "metadata_grid_cell": [
+        23,
+        19
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 52,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 8,
+      "category": "drawer",
+      "name": "Drawer (2)",
+      "attributes": [
+        "procthor_object_id=Dresser|2|1___1",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=52",
+        "footprint_area=0.13"
+      ],
+      "center_grid": [
+        23,
+        19
+      ],
+      "metadata_grid_cell": [
+        23,
+        19
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 52,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 9,
+      "category": "drawer",
+      "name": "Drawer (1)",
+      "attributes": [
+        "procthor_object_id=SideTable|3|3___1",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=90",
+        "footprint_area=0.225"
+      ],
+      "center_grid": [
+        21,
+        151
+      ],
+      "metadata_grid_cell": [
+        21,
+        151
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 90,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 10,
+      "category": "drawer",
+      "name": "Drawer",
+      "attributes": [
+        "procthor_object_id=SideTable|3|3___0",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=90",
+        "footprint_area=0.225"
+      ],
+      "center_grid": [
+        21,
+        151
+      ],
+      "metadata_grid_cell": [
+        21,
+        151
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 90,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 11,
+      "category": "drawer",
+      "name": "Drawer (3)",
+      "attributes": [
+        "procthor_object_id=Dresser|2|1___2",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=52",
+        "footprint_area=0.13"
+      ],
+      "center_grid": [
+        23,
+        19
+      ],
+      "metadata_grid_cell": [
+        23,
+        19
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 52,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 12,
+      "category": "drawer",
+      "name": "Drawer (4)",
+      "attributes": [
+        "procthor_object_id=Dresser|2|1___3",
+        "procthor_object_type=Drawer",
+        "footprint_source=bbox",
+        "num_grid_cells=52",
+        "footprint_area=0.13"
+      ],
+      "center_grid": [
+        23,
+        19
+      ],
+      "metadata_grid_cell": [
+        23,
+        19
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 52,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "unresolved"
+    },
+    {
+      "id": 13,
+      "category": "dresser",
+      "name": "Dresser|2|1",
+      "attributes": [
+        "procthor_object_id=Dresser|2|1",
+        "procthor_object_type=Dresser",
+        "footprint_source=bbox",
+        "num_grid_cells=80",
+        "footprint_area=0.2"
+      ],
+      "center_grid": [
+        24,
+        18
+      ],
+      "metadata_grid_cell": [
+        23,
+        18
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 80,
+      "footprint_source": "bbox",
+      "description": "the dresser",
+      "description_constraints": {
+        "category": "dresser"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        13
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 14,
+      "category": "faucet",
+      "name": "Faucet|3|1|1",
+      "attributes": [
+        "procthor_object_id=Faucet|3|1|1",
+        "procthor_object_type=Faucet",
+        "footprint_source=bbox",
+        "num_grid_cells=72",
+        "footprint_area=0.18000000000000002"
+      ],
+      "center_grid": [
+        87,
+        98
+      ],
+      "metadata_grid_cell": [
+        87,
+        98
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 72,
+      "footprint_source": "bbox",
+      "description": "the faucet",
+      "description_constraints": {
+        "category": "faucet"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        14
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 15,
+      "category": "garbage_can",
+      "name": "GarbageCan|2|3",
+      "attributes": [
+        "procthor_object_id=GarbageCan|2|3",
+        "procthor_object_type=GarbageCan",
+        "footprint_source=bbox",
+        "num_grid_cells=63",
+        "footprint_area=0.15750000000000003"
+      ],
+      "center_grid": [
+        38,
+        19
+      ],
+      "metadata_grid_cell": [
+        38,
+        19
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 63,
+      "footprint_source": "bbox",
+      "description": "the garbage can",
+      "description_constraints": {
+        "category": "garbage_can"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        15
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 16,
+      "category": "laptop",
+      "name": "Laptop|surface|2|2",
+      "attributes": [
+        "procthor_object_id=Laptop|surface|2|2",
+        "procthor_object_type=Laptop",
+        "footprint_source=center_fallback",
+        "num_grid_cells=0",
+        "footprint_area=0.0"
+      ],
+      "center_grid": [
+        118,
+        47
+      ],
+      "metadata_grid_cell": [
+        118,
+        47
+      ],
+      "assignment_method": "footprint_cells",
+      "num_grid_cells": 0,
+      "footprint_source": "center_fallback",
+      "description": "the laptop",
+      "description_constraints": {
+        "category": "laptop"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        16
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 17,
+      "category": "painting",
+      "name": "Painting|2|4",
+      "attributes": [
+        "procthor_object_id=Painting|2|4",
+        "procthor_object_type=Painting",
+        "footprint_source=center_fallback",
+        "num_grid_cells=0",
+        "footprint_area=0.0"
+      ],
+      "center_grid": [
+        126,
+        32
+      ],
+      "metadata_grid_cell": [
+        126,
+        32
+      ],
+      "assignment_method": "footprint_cells",
+      "num_grid_cells": 0,
+      "footprint_source": "center_fallback",
+      "description": "the painting closest to the baseball bat",
+      "description_constraints": {
+        "category": "painting",
+        "relation": "nearest",
+        "anchor": {
+          "category": "baseball_bat"
+        },
+        "rank": 1,
+        "tie_margin_cells": 1.0
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        17
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 18,
+      "category": "painting",
+      "name": "Painting|2|5",
+      "attributes": [
+        "procthor_object_id=Painting|2|5",
+        "procthor_object_type=Painting",
+        "footprint_source=center_fallback",
+        "num_grid_cells=5",
+        "footprint_area=0.0125"
+      ],
+      "center_grid": [
+        44,
+        15
+      ],
+      "metadata_grid_cell": [
+        44,
+        15
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 5,
+      "footprint_source": "center_fallback",
+      "description": "the painting in the bedroom",
+      "description_constraints": {
+        "category": "painting",
+        "room_category": "bedroom"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        18
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 19,
+      "category": "painting",
+      "name": "Painting|3|4",
+      "attributes": [
+        "procthor_object_id=Painting|3|4",
+        "procthor_object_type=Painting",
+        "footprint_source=bbox",
+        "num_grid_cells=14",
+        "footprint_area=0.035"
+      ],
+      "center_grid": [
+        54,
+        162
+      ],
+      "metadata_grid_cell": [
+        54,
+        162
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 14,
+      "footprint_source": "bbox",
+      "description": "the painting in the bathroom",
+      "description_constraints": {
+        "category": "painting",
+        "room_category": "bathroom"
+      },
+      "description_depth": 2,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        19
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 20,
+      "category": "plunger",
+      "name": "Plunger|3|2",
+      "attributes": [
+        "procthor_object_id=Plunger|3|2",
+        "procthor_object_type=Plunger",
+        "footprint_source=bbox",
+        "num_grid_cells=9",
+        "footprint_area=0.022500000000000003"
+      ],
+      "center_grid": [
+        87,
+        135
+      ],
+      "metadata_grid_cell": [
+        87,
+        135
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 9,
+      "footprint_source": "bbox",
+      "description": "the plunger",
+      "description_constraints": {
+        "category": "plunger"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        20
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 21,
+      "category": "side_table",
+      "name": "SideTable|3|3",
+      "attributes": [
+        "procthor_object_id=SideTable|3|3",
+        "procthor_object_type=SideTable",
+        "footprint_source=bbox",
+        "num_grid_cells=176",
+        "footprint_area=0.44000000000000006"
+      ],
+      "center_grid": [
+        20,
+        152
+      ],
+      "metadata_grid_cell": [
+        20,
+        151
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 176,
+      "footprint_source": "bbox",
+      "description": "the side table",
+      "description_constraints": {
+        "category": "side_table"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        21
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 22,
+      "category": "sink",
+      "name": "Sink|3|1|0",
+      "attributes": [
+        "procthor_object_id=Sink|3|1|0",
+        "procthor_object_type=Sink",
+        "footprint_source=bbox",
+        "num_grid_cells=208",
+        "footprint_area=0.52"
+      ],
+      "center_grid": [
+        82,
+        98
+      ],
+      "metadata_grid_cell": [
+        82,
+        98
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 208,
+      "footprint_source": "bbox",
+      "description": "the sink",
+      "description_constraints": {
+        "category": "sink"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        22
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 23,
+      "category": "sink_basin",
+      "name": "SinkBasin",
+      "attributes": [
+        "procthor_object_id=Sink|3|1|0___0",
+        "procthor_object_type=SinkBasin",
+        "footprint_source=bbox",
+        "num_grid_cells=98",
+        "footprint_area=0.24500000000000002"
+      ],
+      "center_grid": [
+        81,
+        98
+      ],
+      "metadata_grid_cell": [
+        81,
+        98
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 98,
+      "footprint_source": "bbox",
+      "description": "the sink basin",
+      "description_constraints": {
+        "category": "sink_basin"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        23
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 24,
+      "category": "teddy_bear",
+      "name": "TeddyBear|surface|2|0",
+      "attributes": [
+        "procthor_object_id=TeddyBear|surface|2|0",
+        "procthor_object_type=TeddyBear",
+        "footprint_source=bbox",
+        "num_grid_cells=39",
+        "footprint_area=0.09750000000000002"
+      ],
+      "center_grid": [
+        107,
+        38
+      ],
+      "metadata_grid_cell": [
+        107,
+        38
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_cells",
+      "num_grid_cells": 39,
+      "footprint_source": "bbox",
+      "description": "the teddy bear",
+      "description_constraints": {
+        "category": "teddy_bear"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        24
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 25,
+      "category": "tennis_racket",
+      "name": "TennisRacket|surface|2|1",
+      "attributes": [
+        "procthor_object_id=TennisRacket|surface|2|1",
+        "procthor_object_type=TennisRacket",
+        "footprint_source=bbox",
+        "num_grid_cells=65",
+        "footprint_area=0.1625"
+      ],
+      "center_grid": [
+        84,
+        35
+      ],
+      "metadata_grid_cell": [
+        84,
+        35
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 65,
+      "footprint_source": "bbox",
+      "description": "the tennis racket",
+      "description_constraints": {
+        "category": "tennis_racket"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        25
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 26,
+      "category": "tissue_box",
+      "name": "TissueBox|surface|3|5",
+      "attributes": [
+        "procthor_object_id=TissueBox|surface|3|5",
+        "procthor_object_type=TissueBox",
+        "footprint_source=bbox",
+        "num_grid_cells=8",
+        "footprint_area=0.020000000000000004"
+      ],
+      "center_grid": [
+        20,
+        149
+      ],
+      "metadata_grid_cell": [
+        20,
+        149
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 8,
+      "footprint_source": "bbox",
+      "description": "the tissue box",
+      "description_constraints": {
+        "category": "tissue_box"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        26
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 27,
+      "category": "toilet",
+      "name": "Toilet|3|0",
+      "attributes": [
+        "procthor_object_id=Toilet|3|0",
+        "procthor_object_type=Toilet",
+        "footprint_source=bbox",
+        "num_grid_cells=529",
+        "footprint_area=1.3225000000000002"
+      ],
+      "center_grid": [
+        24,
+        124
+      ],
+      "metadata_grid_cell": [
+        28,
+        125
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 529,
+      "footprint_source": "bbox",
+      "description": "the toilet",
+      "description_constraints": {
+        "category": "toilet"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        27
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 28,
+      "category": "toilet_paper",
+      "name": "ToiletPaper|surface|3|4",
+      "attributes": [
+        "procthor_object_id=ToiletPaper|surface|3|4",
+        "procthor_object_type=ToiletPaper",
+        "footprint_source=bbox",
+        "num_grid_cells=4",
+        "footprint_area=0.010000000000000002"
+      ],
+      "center_grid": [
+        19,
+        128
+      ],
+      "metadata_grid_cell": [
+        19,
+        128
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 4,
+      "footprint_source": "bbox",
+      "description": "the toilet paper",
+      "description_constraints": {
+        "category": "toilet_paper"
+      },
+      "description_depth": 1,
+      "uniqueness_verified": true,
+      "matched_object_ids": [
+        28
+      ],
+      "description_status": "verified"
+    },
+    {
+      "id": 29,
+      "category": "wall",
+      "name": "wall|2|0.00|5.53|1.84|5.53",
+      "attributes": [
+        "procthor_object_id=wall|2|0.00|5.53|1.84|5.53",
+        "procthor_object_type=Wall",
+        "footprint_source=center_fallback",
+        "num_grid_cells=0",
+        "footprint_area=0.0"
+      ],
+      "center_grid": [
+        126,
+        33
+      ],
+      "metadata_grid_cell": [
+        126,
+        33
+      ],
+      "assignment_method": "footprint_cells",
+      "num_grid_cells": 0,
+      "footprint_source": "center_fallback",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 30,
+      "category": "wall",
+      "name": "wall|2|1.84|3.69|1.84|5.53",
+      "attributes": [
+        "procthor_object_id=wall|2|1.84|3.69|1.84|5.53",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=35",
+        "footprint_area=0.08750000000000001"
+      ],
+      "center_grid": [
+        107,
+        52
+      ],
+      "metadata_grid_cell": [
+        107,
+        52
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_cells",
+      "num_grid_cells": 35,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 31,
+      "category": "wall",
+      "name": "wall|2|1.84|3.69|3.69|3.69",
+      "attributes": [
+        "procthor_object_id=wall|2|1.84|3.69|3.69|3.69",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=77",
+        "footprint_area=0.1925"
+      ],
+      "center_grid": [
+        89,
+        70
+      ],
+      "metadata_grid_cell": [
+        89,
+        70
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_cells",
+      "num_grid_cells": 77,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 32,
+      "category": "wall",
+      "name": "wall|2|3.69|0.00|3.69|3.69",
+      "attributes": [
+        "procthor_object_id=wall|2|3.69|0.00|3.69|3.69",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=150",
+        "footprint_area=0.375"
+      ],
+      "center_grid": [
+        60,
+        89
+      ],
+      "metadata_grid_cell": [
+        52,
+        89
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 150,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 33,
+      "category": "wall",
+      "name": "wall|2|0.00|0.00|3.69|0.00",
+      "attributes": [
+        "procthor_object_id=wall|2|0.00|0.00|3.69|0.00",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=224",
+        "footprint_area=0.56"
+      ],
+      "center_grid": [
+        15,
+        53
+      ],
+      "metadata_grid_cell": [
+        15,
+        52
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 224,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 34,
+      "category": "wall",
+      "name": "wall|2|0.00|0.00|0.00|5.53",
+      "attributes": [
+        "procthor_object_id=wall|2|0.00|0.00|0.00|5.53",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=274",
+        "footprint_area=0.685"
+      ],
+      "center_grid": [
+        63,
+        15
+      ],
+      "metadata_grid_cell": [
+        70,
+        15
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 274,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 35,
+      "category": "wall",
+      "name": "wall|3|3.69|0.00|3.69|3.69",
+      "attributes": [
+        "procthor_object_id=wall|3|3.69|0.00|3.69|3.69",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=150",
+        "footprint_area=0.375"
+      ],
+      "center_grid": [
+        52,
+        89
+      ],
+      "metadata_grid_cell": [
+        52,
+        89
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 150,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 36,
+      "category": "wall",
+      "name": "wall|3|3.69|3.69|7.38|3.69",
+      "attributes": [
+        "procthor_object_id=wall|3|3.69|3.69|7.38|3.69",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=151",
+        "footprint_area=0.37750000000000006"
+      ],
+      "center_grid": [
+        89,
+        126
+      ],
+      "metadata_grid_cell": [
+        89,
+        126
+      ],
+      "assignment_method": "footprint_cells",
+      "num_grid_cells": 151,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 37,
+      "category": "wall",
+      "name": "wall|exterior|1.84|3.69|3.69|3.69",
+      "attributes": [
+        "procthor_object_id=wall|exterior|1.84|3.69|3.69|3.69",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=77",
+        "footprint_area=0.1925"
+      ],
+      "center_grid": [
+        88,
+        70
+      ],
+      "metadata_grid_cell": [
+        89,
+        70
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 77,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 38,
+      "category": "wall",
+      "name": "wall|3|3.69|0.00|7.38|0.00",
+      "attributes": [
+        "procthor_object_id=wall|3|3.69|0.00|7.38|0.00",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=224",
+        "footprint_area=0.56"
+      ],
+      "center_grid": [
+        15,
+        122
+      ],
+      "metadata_grid_cell": [
+        15,
+        126
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 224,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 39,
+      "category": "wall",
+      "name": "wall|exterior|0.00|5.53|1.84|5.53",
+      "attributes": [
+        "procthor_object_id=wall|exterior|0.00|5.53|1.84|5.53",
+        "procthor_object_type=Wall",
+        "footprint_source=center_fallback",
+        "num_grid_cells=0",
+        "footprint_area=0.0"
+      ],
+      "center_grid": [
+        126,
+        33
+      ],
+      "metadata_grid_cell": [
+        126,
+        33
+      ],
+      "assignment_method": "footprint_cells",
+      "num_grid_cells": 0,
+      "footprint_source": "center_fallback",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 40,
+      "category": "wall",
+      "name": "wall|exterior|1.84|3.69|1.84|5.53",
+      "attributes": [
+        "procthor_object_id=wall|exterior|1.84|3.69|1.84|5.53",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=35",
+        "footprint_area=0.08750000000000001"
+      ],
+      "center_grid": [
+        98,
+        52
+      ],
+      "metadata_grid_cell": [
+        107,
+        52
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_cells",
+      "num_grid_cells": 35,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 41,
+      "category": "wall",
+      "name": "wall|exterior|0.00|0.00|3.69|0.00",
+      "attributes": [
+        "procthor_object_id=wall|exterior|0.00|0.00|3.69|0.00",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=224",
+        "footprint_area=0.56"
+      ],
+      "center_grid": [
+        15,
+        52
+      ],
+      "metadata_grid_cell": [
+        15,
+        52
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 224,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 42,
+      "category": "wall",
+      "name": "wall|exterior|0.00|0.00|0.00|5.53",
+      "attributes": [
+        "procthor_object_id=wall|exterior|0.00|0.00|0.00|5.53",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=274",
+        "footprint_area=0.685"
+      ],
+      "center_grid": [
+        70,
+        15
+      ],
+      "metadata_grid_cell": [
+        70,
+        15
+      ],
+      "room_id": 1,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 274,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 43,
+      "category": "wall",
+      "name": "wall|exterior|3.69|3.69|7.38|3.69",
+      "attributes": [
+        "procthor_object_id=wall|exterior|3.69|3.69|7.38|3.69",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=151",
+        "footprint_area=0.37750000000000006"
+      ],
+      "center_grid": [
+        89,
+        129
+      ],
+      "metadata_grid_cell": [
+        89,
+        126
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 151,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 44,
+      "category": "wall",
+      "name": "wall|exterior|7.38|0.00|7.38|3.69",
+      "attributes": [
+        "procthor_object_id=wall|exterior|7.38|0.00|7.38|3.69",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=150",
+        "footprint_area=0.375"
+      ],
+      "center_grid": [
+        41,
+        163
+      ],
+      "metadata_grid_cell": [
+        52,
+        163
+      ],
+      "room_id": 2,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 150,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 45,
+      "category": "wall",
+      "name": "wall|exterior|3.69|0.00|7.38|0.00",
+      "attributes": [
+        "procthor_object_id=wall|exterior|3.69|0.00|7.38|0.00",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=224",
+        "footprint_area=0.56"
+      ],
+      "center_grid": [
+        15,
+        126
+      ],
+      "metadata_grid_cell": [
+        15,
+        126
+      ],
+      "room_id": 2,
+      "assignment_method": "metadata_grid_cell",
+      "num_grid_cells": 224,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 46,
+      "category": "wall",
+      "name": "wall|3|7.38|0.00|7.38|3.69",
+      "attributes": [
+        "procthor_object_id=wall|3|7.38|0.00|7.38|3.69",
+        "procthor_object_type=Wall",
+        "footprint_source=wall_segment",
+        "num_grid_cells=150",
+        "footprint_area=0.375"
+      ],
+      "center_grid": [
+        52,
+        163
+      ],
+      "metadata_grid_cell": [
+        52,
+        163
+      ],
+      "assignment_method": "footprint_cells",
+      "num_grid_cells": 150,
+      "footprint_source": "wall_segment",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 47,
+      "category": "window",
+      "name": "window|2|0",
+      "attributes": [
+        "procthor_object_id=window|2|0",
+        "procthor_object_type=Window",
+        "footprint_source=bbox",
+        "num_grid_cells=24",
+        "footprint_area=0.06000000000000001"
+      ],
+      "center_grid": [
+        15,
+        56
+      ],
+      "metadata_grid_cell": [
+        15,
+        68
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 24,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    },
+    {
+      "id": 48,
+      "category": "window",
+      "name": "window|2|1",
+      "attributes": [
+        "procthor_object_id=window|2|1",
+        "procthor_object_type=Window",
+        "footprint_source=bbox",
+        "num_grid_cells=24",
+        "footprint_area=0.06000000000000001"
+      ],
+      "center_grid": [
+        68,
+        15
+      ],
+      "metadata_grid_cell": [
+        56,
+        15
+      ],
+      "room_id": 1,
+      "assignment_method": "footprint_overlap",
+      "num_grid_cells": 24,
+      "footprint_source": "bbox",
+      "description": null,
+      "description_constraints": null,
+      "description_depth": null,
+      "uniqueness_verified": false,
+      "matched_object_ids": [],
+      "description_status": "excluded_structural"
+    }
+  ],
+  "status_counts": {
+    "verified": 20,
+    "excluded_structural": 22,
+    "unresolved": 6
+  }
+}
