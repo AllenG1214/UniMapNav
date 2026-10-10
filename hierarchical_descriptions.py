@@ -17,10 +17,19 @@ def distance(a, b):
 
 
 
+def room_depth(rule):
+    return 1 + room_depth(rule['adjacent_to']) if rule.get('adjacent_to') else 1
+
+
 def depth(rule):
+    levels = [1]
     if rule.get('anchor'):
-        return 1 + max(depth(rule['anchor']), 1 if rule.get('room_category') else 0)
-    return 2 if rule.get('room_category') or rule.get('room_rank') else 1
+        levels.append(1 + depth(rule['anchor']))
+    if rule.get('room'):
+        levels.append(1 + room_depth(rule['room']))
+    if rule.get('room_category') or rule.get('room_rank'):
+        levels.append(2)
+    return max(levels)
 
 
 def scene(data):
@@ -29,7 +38,63 @@ def scene(data):
     areas = Counter(v for row in data.get('layers', {}).get('room', []) for v in row)
     for rid, room in rooms.items():
         room['area_cells'] = areas.get(rid, room.get('area_cells', 0))
+        room['connected_room_ids'] = []
+    # Connectivity is evidence from the supplied raster, never inferred from
+    # room names, bounding boxes, shared walls, or doorway object names.
+    layers = data.get('layers', {})
+    grid, occupancy = layers.get('room', []), layers.get('occupancy', [])
+    free_value = data.get('layer_legends', {}).get('occupancy', {}).get('free', {}).get('value')
+    valid = (free_value is not None and bool(grid) and len(grid) == len(occupancy)
+             and bool(grid[0]) and all(len(row) == len(grid[0]) for row in grid)
+             and all(len(row) == len(grid[0]) for row in occupancy))
+    edges = {rid: set() for rid in rooms}
+    if valid:
+        for row, cells in enumerate(grid):
+            for col, rid in enumerate(cells):
+                if rid not in rooms or occupancy[row][col] != free_value:
+                    continue
+                for y, x in ((row + 1, col), (row, col + 1)):
+                    if y >= len(grid) or x >= len(cells):
+                        continue
+                    other = grid[y][x]
+                    if other in rooms and other != rid and occupancy[y][x] == free_value:
+                        edges[rid].add(other)
+                        edges[other].add(rid)
+    for rid, room in rooms.items():
+        room['connected_room_ids'] = sorted(edges[rid])
     return objects, rooms
+
+
+def resolve_rooms(objects, rooms, rule):
+    """Every explicit room reference must denote exactly one room.
+
+    `contains` is existential: multiple beds in one room are acceptable, but
+    beds in multiple rooms do not identify 'the room that contains a bed'.
+    """
+    if not rule or set(rule) - {'category', 'rank', 'contains', 'adjacent_to'}:
+        return []
+    pool = list(rooms.values())
+    if 'category' in rule:
+        pool = [r for r in pool if r['category'] == rule['category']]
+    if 'rank' in rule:
+        sizes = [r.get('area_cells', 0) for r in rooms.values()]
+        if rule['rank'] not in {'largest', 'smallest'} or not sizes or min(sizes) <= 0:
+            return []
+        best = max(sizes) if rule['rank'] == 'largest' else min(sizes)
+        selected = [r['id'] for r in rooms.values() if r['area_cells'] == best]
+        if len(selected) != 1:
+            return []
+        pool = [r for r in pool if r['id'] == selected[0]]
+    if 'contains' in rule:
+        containing = {o.get('room_id') for o in objects if o['category'] == rule['contains']}
+        pool = [r for r in pool if r['id'] in containing]
+    if 'adjacent_to' in rule:
+        anchors = resolve_rooms(objects, rooms, rule['adjacent_to'])
+        if len(anchors) != 1:
+            return []
+        anchor = anchors[0]
+        pool = [r for r in pool if r['id'] in anchor.get('connected_room_ids', [])]
+    return pool if len(pool) == 1 else []
 
 
 def resolve(objects, rooms, rule, cache=None):
@@ -43,6 +108,11 @@ def resolve(objects, rooms, rule, cache=None):
 
 def _resolve(objects, rooms, rule, cache):
     pool = [o for o in objects if o['category'] == rule['category']]
+    if rule.get('room'):
+        selected = resolve_rooms(objects, rooms, rule['room'])
+        if len(selected) != 1:
+            return []
+        pool = [o for o in pool if o.get('room_id') == selected[0]['id']]
     if rule.get('room_category'):
         matching_rooms = [r for r in rooms.values() if r['category'] == rule['room_category']]
         if len(matching_rooms) != 1:
@@ -77,8 +147,30 @@ def _resolve(objects, rooms, rule, cache):
     return [o for d, o in scores if abs(d - value) <= rule.get('tie_margin_cells', 1.0)]
 
 
+def render_room(rule, variant=0):
+    text = 'the ' + noun(rule['category']) if rule.get('category') else 'the room'
+    predicates = []
+    if rule.get('rank'):
+        if rule.get('category'):
+            predicates.append('is the ' + rule['rank'] + ' room')
+        else:
+            text = 'the ' + rule['rank'] + ' room'
+    if rule.get('contains'):
+        category = noun(rule['contains'])
+        article = 'an' if category[0].lower() in 'aeiou' else 'a'
+        predicates.append(['contains ', 'has ', 'contains ', 'has '][variant % 4]
+                          + article + ' ' + category)
+    if rule.get('adjacent_to'):
+        words = ['is directly connected to ', 'has a direct passage to ',
+                 'adjoins and is directly connected to ', 'is linked by a direct passage to ']
+        predicates.append(words[variant % 4] + render_room(rule['adjacent_to'], variant))
+    return text + (' that ' + ' and '.join(predicates) if predicates else '')
+
+
 def render(rule, variant=0):
     text = 'the ' + noun(rule['category'])
+    if rule.get('room'):
+        text += ' in ' + render_room(rule['room'], variant)
     if rule.get('room_category'):
         text += ' in the ' + noun(rule['room_category'])
     if rule.get('room_rank'):
@@ -107,6 +199,40 @@ def catalog(data, max_depth=4, per_object_layer=24, anchor_limit=2):
     rejected = 0
     cache = {}
 
+    # Build unique room expressions first, bounded separately at every depth.
+    # Base selectors allow both room identity and existential object content.
+    room_layers = {level: defaultdict(list) for level in range(1, max_depth)}
+    room_seen = set()
+    def add_room(rule):
+        key = json.dumps(rule, sort_keys=True)
+        if key in room_seen:
+            return
+        room_seen.add(key)
+        selected = resolve_rooms(objects, rooms, rule)
+        if len(selected) != 1:
+            return
+        level, rid = room_depth(rule), selected[0]['id']
+        if level in room_layers and len(room_layers[level][rid]) < per_object_layer:
+            room_layers[level][rid].append(rule)
+
+    for category in sorted({r['category'] for r in rooms.values()}):
+        add_room({'category': category})
+    for rank in ('largest', 'smallest'):
+        add_room({'rank': rank})
+    for category in categories:
+        add_room({'contains': category})
+        for room_category in sorted({r['category'] for r in rooms.values()}):
+            add_room({'category': room_category, 'contains': category})
+    for level in range(2, max_depth):
+        anchors = [r for group in room_layers[level - 1].values()
+                   for r in (group if level == 2 else group[:anchor_limit])]
+        for anchor in anchors:
+            add_room({'adjacent_to': anchor})
+            for category in sorted({r['category'] for r in rooms.values()}):
+                add_room({'category': category, 'adjacent_to': anchor})
+            for category in categories:
+                add_room({'contains': category, 'adjacent_to': anchor})
+
     def add(rule, dependencies=()):
         nonlocal rejected
         key = json.dumps(rule, sort_keys=True)
@@ -119,6 +245,8 @@ def catalog(data, max_depth=4, per_object_layer=24, anchor_limit=2):
             return
         oid = found[0]['id']
         level = depth(rule)
+        if level > max_depth:
+            return
         if len(layers[level][oid]) >= per_object_layer:
             return
         layers[level][oid].append({'object_id': oid, 'depth': level, 'rule': rule,
@@ -134,6 +262,14 @@ def catalog(data, max_depth=4, per_object_layer=24, anchor_limit=2):
                     add({'category': category, 'room_category': room})
                 for rank in ('largest', 'smallest'):
                     add({'category': category, 'room_rank': rank})
+        for selectors in room_layers[level - 1].values():
+            for selector in selectors:
+                # Existing room_category/room_rank already cover these bases.
+                if set(selector) in ({'category'}, {'rank'}):
+                    continue
+                for category in categories:
+                    if selector.get('contains') != category:
+                        add({'category': category, 'room': selector})
         anchors = [c for candidates in layers[level-1].values() for c in candidates[:anchor_limit]]
         for anchor in anchors:
             for category in categories:
@@ -142,7 +278,8 @@ def catalog(data, max_depth=4, per_object_layer=24, anchor_limit=2):
                     if relation != 'same_room':
                         rule.update(rank=rank, tie_margin_cells=1.0)
                     add(rule, anchor['dependencies'])
-    return {'schema_version': 1, 'max_depth': max_depth,
+    return {'schema_version': 2, 'max_depth': max_depth,
+            'room_connectivity_policy': 'four-connected room-labelled free-cell transition; missing evidence yields no edges',
             'search_bounds': {'per_object_layer': per_object_layer, 'anchors_per_object_layer': anchor_limit},
             'rejected_ambiguous_empty_or_cyclic': rejected,
             'layers': {str(k): [c for group in v.values() for c in group] for k, v in layers.items()},

@@ -27,6 +27,26 @@ A room category must identify exactly one room. Room-size comparisons require co
 
 Each complete rule tree must resolve to exactly one target. Reusing an object within the same reference chain is rejected. English template variants do not increase depth. At most 24 rules are retained per object per level, and at most the first 2 rules per object from the preceding level serve as recursive anchors. This bounded search does not enumerate every valid expression; limits can be configured through the `catalog` API. Objects without a unique description are marked `unresolved`, without coordinate or ID-based language fallbacks.
 
+## Explicit room relations
+
+Catalog schema v2 adds an object-level `room` selector. Existing `room_category`, `room_rank`, and object-anchor rules remain supported. A room selector can combine `category`, `rank` (`largest` or `smallest` over all rooms), `contains` (an object category), and recursively nested `adjacent_to` (another room selector).
+
+Examples:
+
+```json
+{"category": "chair", "room": {"adjacent_to": {"rank": "largest"}}}
+{"category": "cabinet", "room": {"adjacent_to": {"contains": "bed"}}}
+{"category": "chair", "room": {"category": "bedroom", "contains": "piano", "adjacent_to": {"category": "living_room"}}}
+```
+
+These render as "the chair in the room that is directly connected to the largest room", "the cabinet in the room that is directly connected to the room that contains a bed", and "the chair in the bedroom that contains a piano and is directly connected to the living room". Four template variants express the same predicates, without changing the rule or depth. No inferred functional areas are used.
+
+Two rooms are directly connected only when a pair of horizontally or vertically adjacent raster cells have different valid room IDs and both cells equal the declared free occupancy value. Connectivity is undirected. A shared wall or diagonal contact is insufficient. Missing or mismatched room/occupancy grids yield no connections. Connections through an unlabelled intermediate space are not inferred. The wording describes this raster-level direct-passage relation, not a guarantee about simulator door state.
+
+Every explicit room selector, including every nested reference room, must identify exactly one room. `contains` means at least one object with the specified category and that room's `room_id`; multiple beds in the same room are allowed. If beds occur in two rooms, the unqualified "room that contains a bed" is rejected. Combined predicates may identify one room. If the largest room connects to two rooms, the unqualified "room directly connected to the largest room" is rejected even if the target object happens to be globally unique. After the room is resolved, the complete object rule must still resolve to exactly one object. Room-size ties remain rejected.
+
+A base room selector has depth 1; each `adjacent_to` adds one room-reference level. The enclosing object adds one level, so an object in a room connected to the largest room has depth 3. Generation obeys `max_depth` and bounds room candidates per room per level using `per_object_layer`; deeper room references use `anchor_limit`. References lacking a unique expression are never replaced by room IDs or coordinates.
+
 ## Outputs and difficulty
 
 Each map has `item_annotations.json`, `description_catalog.json`, and `descriptions_level_1.json`, `descriptions_level_2.json`, and subsequent levels. Catalog entries contain `object_id`, `depth`, `rule`, `dependencies`, and `expressions`. Empty levels are also exported.
