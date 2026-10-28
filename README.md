@@ -75,4 +75,4 @@ python -m pip install -r requirements-plot.txt
 python plot_navigation_trajectory.py --map /path/to/map.json --instruction /path/to/instruction.json --output generated_maps/trajectory.png
 ```
 
-The plotter expects a PNG beside the map JSON. Existing ten-map samples remain on the [object-annotation branch](https://github.com/AllenG1214/UniNav/tree/object-annotation/generated_maps/trajectory_test). Historical samples lack annotation reports; regenerate annotations before running the verifier.
+The plotter expects a PNG beside the map JSON. Existing ten-map samples remain under the [archived sample tag](https://github.com/AllenG1214/UniNav/tree/archive/object-annotation-20261027/generated_maps/trajectory_test). Historical samples lack annotation reports; regenerate annotations before running the verifier.
