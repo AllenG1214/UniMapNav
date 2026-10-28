@@ -1,0 +1,4 @@
+# Core annotation dependencies, pinned to the locally tested environment.
+# Simulator export needs a separate compatible Map2Route/AI2-THOR environment.
+numpy==2.5.3
+scipy==1.18.1
