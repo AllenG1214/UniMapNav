@@ -28,7 +28,7 @@ Depth measures reference nesting; one object can have descriptions at several le
 
 Supported information includes **unique object category, unique room category, largest/smallest room, same room as an anchor, and nearest/farthest/second-nearest/second-farthest to an anchor**. Relations can be nested and paraphrased, for example `in the same room as` and `that shares a room with`. Paraphrasing does not increase depth.
 
-Distances are straight-line distances between object centers; differences within one grid cell are treated as ties by default. Largest/smallest refers only to room area. Color, material, shape, object size, orientation, left/right/front/back, above/below, between-object, and support relations are not currently supported.
+Distances are straight-line distances between object centers; differences within one grid cell are treated as ties by default. Largest/smallest refers only to room area. Color, material, shape, object size, orientation, left/right/front/back, above/below, and support relations are not currently supported. Between-object and relative-distance relations are now supported; see the coverage table below.
 
 ## Navigation tasks and checks
 
@@ -55,3 +55,25 @@ For example, visiting the unique sofa without preferences is easy; visiting the 
 The integrated algorithm additionally supports room selectors based on contained object categories and direct raster connectivity, including nested references. Every explicit room selector must uniquely identify a room. Connectivity requires adjacent free cells with valid distinct room IDs; shared walls and diagonal contact are insufficient. See `hierarchical_navigation.md` for the full rules and depth semantics.
 
 Far-preference landmarks must be more than 1.5 m from the segment start, arrival region, and target footprint. This filters reference selection and is not a hard trajectory-distance threshold. `plot_navigation_trajectory.py` renders saved tasks using the companion map PNG; plotting dependencies are listed separately in `requirements-plot.txt`.
+
+
+## Current instruction coverage
+
+| Annotation mechanism | Implementation |
+|---|---|
+| Goal and visit order | Ordered target approach regions (hard constraints) |
+| Route preference | Per-segment near/far distance costs (soft preferences) |
+| Object category | Uniquely resolving category references |
+| Room context | Room category, largest/smallest, category contained in room |
+| Same-room relation | Target shares the uniquely resolved anchor's room |
+| Distance ranking | Nearest/farthest/second-nearest/second-farthest, optionally room-scoped |
+| Relative distance | Closer to one uniquely resolved object than another, with tie margin |
+| Between | Open-segment projection and bounded perpendicular distance between two anchors |
+| Room connectivity | Required direct connections to room references; exact connection count |
+| Nested descriptions | Recursive room and object references, with unique resolution |
+
+Exact room object counts and absence selectors are implemented but disabled in
+generation by default. Enable with `--enable-counting` and `--enable-absence`.
+Search is bounded: support does not guarantee every relation appears in every map.
+See `hierarchical_navigation.md` for geometric definitions, evidence limitations,
+search limits, JSON rules, and feature switches.

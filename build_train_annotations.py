@@ -49,6 +49,8 @@ def main():
     parser.add_argument('--objects-per-task', type=int, default=3)
     parser.add_argument('--tasks-per-map', type=int, default=0)
     parser.add_argument('--seed', type=int, default=42)
+    parser.add_argument('--enable-counting', action='store_true', help='Generate exact object counts in room selectors')
+    parser.add_argument('--enable-absence', action='store_true', help='Generate room selectors using absent object categories')
     args = parser.parse_args()
     if args.max_depth < 1 or args.objects_per_task < 1 or args.tasks_per_map < 0:
         parser.error('Invalid depth or task counts')
@@ -75,7 +77,7 @@ def main():
         if report_path.exists():
             raise ValueError(f'Output already contains a run: {report_path}; choose a fresh output directory')
         initial_data = json.loads(source.read_bytes())
-        inventory = catalog(initial_data, max_depth=args.max_depth)
+        inventory = catalog(initial_data, max_depth=args.max_depth, enable_counting=args.enable_counting, enable_absence=args.enable_absence)
         references = {}
         for entries in inventory['layers'].values():
             for candidate in entries:

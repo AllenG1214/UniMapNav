@@ -62,7 +62,7 @@ class DescriptionAllocator:
             raise ValueError(f'Description pool exhausted for object {oid}')
 
         def keys(rule):
-            reference = {key: rule[key] for key in ('anchor', 'room', 'room_category', 'room_rank') if key in rule}
+            reference = {key: rule[key] for key in ('anchor', 'other_anchor', 'room', 'room_category', 'room_rank') if key in rule}
             return (json.dumps(rule, sort_keys=True), json.dumps(reference, sort_keys=True))
 
         def score(candidate):

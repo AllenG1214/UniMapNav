@@ -76,3 +76,23 @@ python plot_navigation_trajectory.py --map /path/to/map.json --instruction /path
 ```
 
 The plotter expects a PNG beside the map JSON. Existing ten-map samples remain under the [archived sample tag](https://github.com/AllenG1214/UniNav/tree/archive/object-annotation-20261027/generated_maps/trajectory_test). Historical samples lack annotation reports; regenerate annotations before running the verifier.
+
+
+## Extended annotation mechanisms
+
+The generator additionally supports relative distance to two reference objects,
+between-object relations, room-scoped distance rankings, multiple required room
+connections, and exact room connection counts. Object and room references can be
+nested and must resolve uniquely. See the [coverage table](docs/navigation_annotation_one_page.md#current-instruction-coverage)
+and [precise rule semantics](hierarchical_navigation.md#extended-relations-catalog-schema-v3).
+
+Exact object counts and object absence in rooms are implemented and disabled by
+default. Enable them explicitly:
+
+```bash
+python build_train_annotations.py --maps /path/to/maps --output generated_maps/extended --enable-counting --enable-absence
+python verify_navigation.py --root generated_maps/extended
+```
+
+Search is bounded; supported mechanisms are generated only when the map evidence,
+uniqueness checks, and retained search candidates allow them.

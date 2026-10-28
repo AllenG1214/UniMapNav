@@ -250,5 +250,142 @@ class PreferenceSelectionTests(unittest.TestCase):
             data['metadata']['map_info']['resolution'], False))
 
 
+
+class ExtendedDescriptionTests(unittest.TestCase):
+    def setUp(self):
+        self.data = {
+            'object_instances': [
+                {'id': 1, 'category': 'table', 'room_id': 1, 'center_grid': [3, 1]},
+                {'id': 2, 'category': 'sofa', 'room_id': 3, 'center_grid': [3, 9]},
+                {'id': 3, 'category': 'chair', 'room_id': 2, 'center_grid': [3, 4]},
+                {'id': 4, 'category': 'chair', 'room_id': 3, 'center_grid': [5, 8]},
+                {'id': 5, 'category': 'chair', 'room_id': 2, 'center_grid': [6, 4]},
+                {'id': 6, 'category': 'lamp', 'room_id': 1, 'center_grid': [2, 1]},
+                {'id': 7, 'category': 'clock', 'room_id': 2, 'center_grid': [2, 3]}],
+            'room_instances': [{'id': 1, 'category': 'kitchen', 'area_cells': 12},
+                               {'id': 2, 'category': 'hall', 'area_cells': 12},
+                               {'id': 3, 'category': 'bedroom', 'area_cells': 12}],
+            'layers': {'room': [[1, 1, 2, 2, 3, 3]] * 7,
+                       'occupancy': [[0] * 6 for _ in range(7)]},
+            'layer_legends': {'occupancy': {'free': {'value': 0}}}}
+
+    def ids(self, rule):
+        objects, rooms = scene(self.data)
+        return [o['id'] for o in resolve(objects, rooms, rule)]
+
+    def pair(self, relation):
+        return {'category': 'chair', 'relation': relation,
+                'anchor': {'category': 'table'}, 'other_anchor': {'category': 'sofa'}}
+
+    def test_relative_distance_and_tie_margin(self):
+        self.assertEqual(self.ids(self.pair('closer_than')), [3, 5])
+        self.data['object_instances'][2]['center_grid'] = [3, 5]
+        self.assertEqual(self.ids(self.pair('closer_than')), [5])
+
+    def test_between_excludes_off_axis_endpoints_and_outside(self):
+        self.assertEqual(self.ids(self.pair('between')), [3])
+        self.data['object_instances'][2]['center_grid'] = [3, 1]
+        self.assertEqual(self.ids(self.pair('between')), [])
+        self.data['object_instances'][2]['center_grid'] = [3, 10]
+        self.assertEqual(self.ids(self.pair('between')), [])
+
+    def test_pair_rejects_ambiguous_duplicate_and_missing_anchors(self):
+        rule = self.pair('between')
+        rule['other_anchor'] = {'category': 'chair'}
+        self.assertEqual(self.ids(rule), [])
+        rule['other_anchor'] = {'category': 'table'}
+        self.assertEqual(self.ids(rule), [])
+        rule['other_anchor'] = {'category': 'missing'}
+        self.assertEqual(self.ids(rule), [])
+
+    def test_between_degenerate_and_tolerance(self):
+        self.data['object_instances'][1]['center_grid'] = [3, 1]
+        self.assertEqual(self.ids(self.pair('between')), [])
+        self.data['object_instances'][1]['center_grid'] = [3, 9]
+        rule = dict(self.pair('between'), between_tolerance_cells=3)
+        self.assertEqual(self.ids(rule), [3, 4, 5])
+
+    def test_room_scoped_ranking(self):
+        rule = {'category': 'chair', 'room': {'category': 'hall'},
+                'relation': 'farthest', 'anchor': {'category': 'table'}}
+        self.assertEqual(self.ids(rule), [5])
+        self.assertIn('in the hall', render(rule))
+
+    def test_multi_room_and_exact_connectivity(self):
+        selector = {'adjacent_to': [{'category': 'kitchen'}, {'category': 'bedroom'}],
+                    'connection_count': 2}
+        objects, rooms = scene(self.data)
+        self.assertEqual([r['id'] for r in resolve_rooms(objects, rooms, selector)], [2])
+        self.assertEqual(depth({'category': 'chair', 'room': selector}), 3)
+        self.assertIn('exactly 2 other rooms', render({'category': 'chair', 'room': selector}))
+        selector['adjacent_to'][1] = {'category': 'kitchen'}
+        self.assertEqual(resolve_rooms(objects, rooms, selector), [])
+
+    def test_no_evidence_is_not_zero_connections(self):
+        self.data['layers'].pop('occupancy')
+        objects, rooms = scene(self.data)
+        self.assertEqual(resolve_rooms(objects, rooms, {'connection_count': 0}), [])
+
+    def test_exact_counts_absence_and_ambiguity(self):
+        objects, rooms = scene(self.data)
+        self.assertEqual([r['id'] for r in resolve_rooms(objects, rooms, {'object_counts': {'chair': 2}})], [2])
+        self.assertEqual([r['id'] for r in resolve_rooms(objects, rooms, {'absent_categories': ['chair']})], [1])
+        self.assertEqual(resolve_rooms(objects, rooms, {'absent_categories': ['lamp']}), [])
+        self.assertEqual(resolve_rooms(objects, rooms, {'object_counts': {'chair': -1}}), [])
+
+    def test_catalog_generates_new_families_and_all_roundtrip(self):
+        entries = [e for group in catalog(self.data)['layers'].values() for e in group]
+        rules = [e['rule'] for e in entries]
+        self.assertTrue(any(r.get('relation') == 'between' for r in rules))
+        self.assertTrue(any(r.get('relation') == 'closer_than' for r in rules))
+        self.assertTrue(any(r.get('anchor') and r.get('room') for r in rules))
+        self.assertTrue(any(isinstance(r.get('room', {}).get('adjacent_to'), list) for r in rules))
+        self.assertTrue(any('connection_count' in r.get('room', {}) for r in rules))
+        for e in entries:
+            self.assertEqual(self.ids(e['rule']), [e['object_id']])
+            self.assertEqual(depth(e['rule']), e['depth'])
+            self.assertEqual(len(e['dependencies']), len(set(e['dependencies'])))
+
+    def test_extensions_work_in_target_and_soft_reference(self):
+        target = self.pair('between')
+        reference = dict(self.pair('closer_than'), category='lamp')
+        allocator = DescriptionAllocator(self.data, candidates={
+            3: [(render(target), target)], 6: [(render(reference), reference)]})
+        text, rule = allocator.take(3)
+        ref_text, ref_rule = allocator.take(6)
+        task = {'id': 2, 'objects': [{'order': 1, 'description': text, 'description_constraints': rule}],
+                'soft_constraints': [{'scope': {'type': 'between_hard_constraints', 'from_order': 0, 'to_order': 1},
+                                      'preference_type': 'far_preference', 'reference_description': ref_text,
+                                      'reference_description_constraints': ref_rule}]}
+        rendered = instruction(task)
+        self.assertIn('between', rendered)
+        self.assertIn('closer to', rendered)
+        self.assertIn('keep your distance from', rendered)
+        self.assertEqual(self.ids(rule), [3])
+        self.assertEqual(self.ids(ref_rule), [6])
+
+    def test_count_absence_generation_opt_in(self):
+        def selectors(result):
+            return [e['rule'].get('room', {}) for g in result['layers'].values() for e in g]
+        normal = catalog(self.data, max_depth=2)
+        self.assertFalse(any('object_counts' in r or 'absent_categories' in r for r in selectors(normal)))
+        enabled = catalog(self.data, max_depth=2, enable_counting=True, enable_absence=True)
+        self.assertTrue(any('object_counts' in r for r in selectors(enabled)))
+        self.assertTrue(any('absent_categories' in r for r in selectors(enabled)))
+        self.assertTrue(enabled['enabled_features']['counting'])
+
+    def test_pair_nested_depth_and_instruction_allocation(self):
+        rule = self.pair('between')
+        rule['anchor'] = {'category': 'table', 'room_category': 'kitchen'}
+        self.assertEqual(depth(rule), 3)
+        allocator = DescriptionAllocator(self.data, candidates={3: [(render(rule, v), rule) for v in range(4)]})
+        text, allocated = allocator.take(3)
+        task = {'id': 1, 'objects': [{'order': 1, 'description': text, 'description_constraints': allocated}],
+                'soft_constraints': []}
+        self.assertIn('between', instruction(task))
+        self.assertEqual(difficulty(task)[0], 'hard')
+        self.assertEqual(self.ids(allocated), [3])
+
+
 if __name__ == '__main__':
     unittest.main()
